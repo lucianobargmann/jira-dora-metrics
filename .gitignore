@@ -1,0 +1,13 @@
+# Environment
+.env
+venv/
+__pycache__/
+
+# Generated reports and data
+*.xlsx
+*.csv
+team_report_*.json
+november_report.json
+
+# OS files
+.DS_Store

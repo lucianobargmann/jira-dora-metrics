@@ -1,0 +1,197 @@
+{
+  "name": "Ninjio Engineering Metrics - Optimized",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "## Working",
+        "height": 656,
+        "width": 1248,
+        "color": 5
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        672,
+        -16
+      ],
+      "typeVersion": 1,
+      "id": "74865523-0f75-4375-9795-724f4bea9082",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Get issues from the HTTP Request response\nconst responseData = $input.all()[0].json;\nconst issues = responseData.issues || [];\n\n// Helper: Calculate time between two dates in hours\nfunction getHoursBetween(start, end) {\n  return (new Date(end) - new Date(start)) / (1000 * 60 * 60);\n}\n\n// Helper: Calculate lead time from changelog\nfunction calculateLeadTime(changelog) {\n  if (!changelog || !changelog.histories) return 0;\n  \n  const activeStatuses = ['IN PROGRESS', 'DEV IN PROGRESS', 'IN REVIEW'];\n  let totalHours = 0;\n  let currentStatus = null;\n  let statusStartTime = null;\n  \n  // Sort histories by created date\n  const histories = changelog.histories.sort((a, b) => \n    new Date(a.created) - new Date(b.created)\n  );\n  \n  for (const history of histories) {\n    const statusChange = history.items.find(item => \n      item.field === 'status'\n    );\n    \n    if (statusChange) {\n      // If we were tracking a status, calculate time spent\n      if (currentStatus && activeStatuses.includes(currentStatus.toUpperCase())) {\n        totalHours += getHoursBetween(statusStartTime, history.created);\n      }\n      \n      // Update current status\n      currentStatus = statusChange.toString;\n      statusStartTime = history.created;\n    }\n  }\n  \n  // If still in active status, count time until now\n  if (currentStatus && activeStatuses.includes(currentStatus.toUpperCase())) {\n    totalHours += getHoursBetween(statusStartTime, new Date());\n  }\n  \n  return totalHours;\n}\n\n// Helper: Calculate percentile\nfunction percentile(arr, p) {\n  if (arr.length === 0) return 0;\n  const sorted = [...arr].sort((a, b) => a - b);\n  const index = (p / 100) * (sorted.length - 1);\n  const lower = Math.floor(index);\n  const upper = Math.ceil(index);\n  const weight = index % 1;\n  return sorted[lower] * (1 - weight) + sorted[upper] * weight;\n}\n\n// Calculate metrics for each issue\nconst metricsData = issues.map(issue => {\n  // Access dates from fields object\n  const created = issue.fields.created;\n  const resolved = issue.fields.resolutiondate;\n  \n  // Extract project from issue key (e.g., \"SAOP2-475\" -> \"SAOP2\")\n  const project = issue.key.split('-')[0];\n  \n  // Calculate cycle time (hours)\n  const cycleTime = getHoursBetween(created, resolved);\n  \n  // Calculate lead time (hours)\n  let leadTime = calculateLeadTime(issue.changelog);\n  \n  // 🚨 PENALTY: If lead time is 0, they skipped workflow - penalize with full cycle time\n  const workflowViolation = leadTime === 0;\n  if (workflowViolation) {\n    leadTime = cycleTime;\n  }\n  \n  return {\n    key: issue.key,\n    project: project,\n    summary: issue.fields.summary,\n    issueType: issue.fields.issuetype.name,\n    priority: issue.fields.priority.name,\n    created: created,\n    resolved: resolved,\n    cycleTime: cycleTime,\n    cycleTimeDays: (cycleTime / 24).toFixed(1),\n    leadTime: leadTime,\n    leadTimeDays: (leadTime / 24).toFixed(1),\n    efficiency: leadTime > 0 ? ((leadTime / cycleTime) * 100).toFixed(1) : 0,\n    workflowViolation: workflowViolation // Flag for reporting\n  };\n});\n\n// Calculate overall statistics\nconst cycleTimes = metricsData.map(m => m.cycleTime);\nconst leadTimes = metricsData.map(m => m.leadTime);\n\nconst avgCycleTime = cycleTimes.reduce((a, b) => a + b, 0) / cycleTimes.length;\nconst avgLeadTime = leadTimes.reduce((a, b) => a + b, 0) / leadTimes.length;\n\n// Count workflow violations\nconst workflowViolations = metricsData.filter(m => m.workflowViolation);\n\n// Group by issue type\nconst byIssueType = metricsData.reduce((acc, item) => {\n  if (!acc[item.issueType]) {\n    acc[item.issueType] = {\n      count: 0,\n      totalCycleTime: 0,\n      totalLeadTime: 0\n    };\n  }\n  acc[item.issueType].count++;\n  acc[item.issueType].totalCycleTime += item.cycleTime;\n  acc[item.issueType].totalLeadTime += item.leadTime;\n  return acc;\n}, {});\n\n// Group by project\nconst byProject = metricsData.reduce((acc, item) => {\n  if (!acc[item.project]) {\n    acc[item.project] = {\n      count: 0,\n      totalCycleTime: 0,\n      totalLeadTime: 0,\n      cycleTimes: [],\n      leadTimes: [],\n      workflowViolations: 0\n    };\n  }\n  acc[item.project].count++;\n  acc[item.project].totalCycleTime += item.cycleTime;\n  acc[item.project].totalLeadTime += item.leadTime;\n  acc[item.project].cycleTimes.push(item.cycleTime);\n  acc[item.project].leadTimes.push(item.leadTime);\n  if (item.workflowViolation) {\n    acc[item.project].workflowViolations++;\n  }\n  return acc;\n}, {});\n\n// Get top 5 longest lead times\nconst topLeadTimes = [...metricsData]\n  .sort((a, b) => b.leadTime - a.leadTime)\n  .slice(0, 5);\n\n// Format Slack message\nconst weekInfo = $('Calculate Previous Week').item.json;\n\n// Add workflow violation warning if any exist\nconst violationWarning = workflowViolations.length > 0 ? `\n⚠️ *Workflow Violations: ${workflowViolations.length} issues*\n_Issues moved directly to DONE without proper workflow (lead time = cycle time penalty applied)_\n${workflowViolations.slice(0, 5).map(item => \n  `• <https://ninjio.atlassian.net/browse/${item.key}|${item.key}> (${item.project})`\n).join('\\n')}\n${workflowViolations.length > 5 ? `_...and ${workflowViolations.length - 5} more_` : ''}\n` : '';\n\nconst slackMessage = `\n📊 *Weekly DORA Metrics Report*\n_Period: ${weekInfo.startDate} to ${weekInfo.endDate}_\n\n*📈 Overall Metrics*\n- Issues Completed: *${issues.length}*\n- Avg Cycle Time: *${(avgCycleTime / 24).toFixed(1)} days* (${avgCycleTime.toFixed(1)}h)\n- Avg Lead Time: *${(avgLeadTime / 24).toFixed(1)} days* (${avgLeadTime.toFixed(1)}h)\n- Active Work Ratio: *${((avgLeadTime / avgCycleTime) * 100).toFixed(1)}%*\n\n*⏱️ Cycle Time Distribution*\n- Median: ${(percentile(cycleTimes, 50) / 24).toFixed(1)} days\n- P75: ${(percentile(cycleTimes, 75) / 24).toFixed(1)} days\n- P95: ${(percentile(cycleTimes, 95) / 24).toFixed(1)} days\n\n*🔄 Lead Time Distribution*\n- Median: ${(percentile(leadTimes, 50) / 24).toFixed(1)} days\n- P75: ${(percentile(leadTimes, 75) / 24).toFixed(1)} days\n- P95: ${(percentile(leadTimes, 95) / 24).toFixed(1)} days\n\n*🎯 By Project*\n${Object.entries(byProject)\n  .sort((a, b) => b[1].count - a[1].count) // Sort by count descending\n  .map(([project, stats]) => {\n    const avgCycle = (stats.totalCycleTime / stats.count / 24).toFixed(1);\n    const avgLead = (stats.totalLeadTime / stats.count / 24).toFixed(1);\n    const medianCycle = (percentile(stats.cycleTimes, 50) / 24).toFixed(1);\n    const medianLead = (percentile(stats.leadTimes, 50) / 24).toFixed(1);\n    const violationNote = stats.workflowViolations > 0 ? ` ⚠️ ${stats.workflowViolations} violations` : '';\n    return `• *${project}*: ${stats.count} issues${violationNote}\n  ├ Avg Cycle: ${avgCycle}d | Median: ${medianCycle}d\n  └ Avg Lead: ${avgLead}d | Median: ${medianLead}d`;\n}).join('\\n')}\n\n*📋 By Issue Type*\n${Object.entries(byIssueType).map(([type, stats]) => {\n  return `• ${type}: ${stats.count} issues | Avg Cycle: ${(stats.totalCycleTime / stats.count / 24).toFixed(1)}d | Avg Lead: ${(stats.totalLeadTime / stats.count / 24).toFixed(1)}d`;\n}).join('\\n')}\n\n*🐌 Top 5 Longest Lead Times*\n${topLeadTimes.map((item, i) => \n  `${i + 1}. <https://ninjio.atlassian.net/browse/${item.key}|${item.key}>: ${item.leadTimeDays}d${item.workflowViolation ? ' ⚠️' : ''} - ${item.summary.substring(0, 50)}${item.summary.length > 50 ? '...' : ''}`\n).join('\\n')}\n${violationWarning}\n`;\n\nreturn {\n  json: {\n    text: slackMessage,\n    metrics: {\n      totalIssues: issues.length,\n      avgCycleTimeDays: (avgCycleTime / 24).toFixed(1),\n      avgCycleTimeHours: avgCycleTime.toFixed(1), // 🆕 Show both units\n      avgLeadTimeDays: (avgLeadTime / 24).toFixed(1),\n      avgLeadTimeHours: avgLeadTime.toFixed(1), // 🆕 Show both units\n      medianCycleTimeDays: (percentile(cycleTimes, 50) / 24).toFixed(1),\n      medianLeadTimeDays: (percentile(leadTimes, 50) / 24).toFixed(1),\n      workflowViolations: workflowViolations.length,\n      byProject: Object.entries(byProject).reduce((acc, [project, stats]) => {\n        acc[project] = {\n          count: stats.count,\n          avgCycleTimeDays: (stats.totalCycleTime / stats.count / 24).toFixed(1),\n          avgCycleTimeHours: (stats.totalCycleTime / stats.count).toFixed(1), // 🆕 Hours\n          avgLeadTimeDays: (stats.totalLeadTime / stats.count / 24).toFixed(1),\n          avgLeadTimeHours: (stats.totalLeadTime / stats.count).toFixed(1), // 🆕 Hours\n          medianCycleTimeDays: (percentile(stats.cycleTimes, 50) / 24).toFixed(1),\n          medianLeadTimeDays: (percentile(stats.leadTimes, 50) / 24).toFixed(1),\n          workflowViolations: stats.workflowViolations\n        };\n        return acc;\n      }, {})\n    },\n    details: metricsData.map(item => ({\n      ...item,\n      cycleTimeHours: item.cycleTime.toFixed(1), // 🆕 Explicit hours label\n      leadTimeHours: item.leadTime.toFixed(1) // 🆕 Explicit hours label\n    }))\n  }\n};"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1408,
+        112
+      ],
+      "id": "d7e33a68-84a0-4b83-92ea-8ad65fb889aa",
+      "name": "Calculate Metrics & Format"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Calculate previous work week (Monday to Sunday)\nconst today = new Date();\nconst currentDay = today.getDay();\n\n// Calculate days to subtract to get to last Sunday\nconst daysToLastSunday = currentDay === 0 ? 7 : currentDay;\n\n// Get last Sunday (end of previous week)\nconst lastSunday = new Date(today);\nlastSunday.setDate(today.getDate() - daysToLastSunday);\n\n// Get last Monday (start of previous week)\nconst lastMonday = new Date(lastSunday);\nlastMonday.setDate(lastSunday.getDate() - 6);\n\n// Format dates as YYYY-MM-DD\nconst formatDate = (date) => {\n  const year = date.getFullYear();\n  const month = String(date.getMonth() + 1).padStart(2, '0');\n  const day = String(date.getDate()).padStart(2, '0');\n  return `${year}-${month}-${day}`;\n};\n\nconst startDate = formatDate(lastMonday);\nconst endDate = formatDate(lastSunday);\n\nreturn [{\n  json: {\n    startDate: startDate,\n    endDate: endDate,\n    weekLabel: `${startDate} to ${endDate}`\n  }\n}];"
+      },
+      "id": "519525ce-253b-4d13-835b-a5b7f4e9b3c3",
+      "name": "Calculate Previous Week",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        992,
+        112
+      ]
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 8 * * 1"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        768,
+        112
+      ],
+      "id": "f5a61c99-0526-4864-ace3-a08729dda1b4",
+      "name": "Every Monday 8am"
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "value": "C09T3PZ4W30",
+          "mode": "list",
+          "cachedResultName": "test-eng-metrics"
+        },
+        "text": "={{ $json.text }}",
+        "otherOptions": {}
+      },
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.3,
+      "position": [
+        1664,
+        112
+      ],
+      "id": "7cef5a90-258d-4f39-bb82-6f357ee409f0",
+      "name": "Send to Slack",
+      "webhookId": "5eb4e25c-05de-462c-9193-07cb06b7e591",
+      "credentials": {
+        "slackOAuth2Api": {
+          "id": "B1wMELrw5mcHMlty",
+          "name": "Slack account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "https://ninjio.atlassian.net/rest/api/3/search/jql",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "jiraSoftwareCloudApi",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "jql",
+              "value": "=status = Done AND project IN (IA, DATA, SAOP, SAOP2) AND resolutiondate >= \"{{ $json.startDate }}\" AND resolutiondate <= \"{{ $json.endDate }}\" AND type IN (Bug, Story, Task) ORDER BY resolutiondate DESC"
+            },
+            {
+              "name": "maxResults",
+              "value": "100"
+            },
+            {
+              "name": "fields",
+              "value": "key,summary,created,resolutiondate,issuetype,priority,status"
+            },
+            {
+              "name": "expand",
+              "value": "changelog"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        1200,
+        112
+      ],
+      "id": "ec3b2148-50d4-496d-ae0e-65a33cbc5378",
+      "name": "HTTP Request",
+      "credentials": {
+        "jiraSoftwareCloudApi": {
+          "id": "36RXKc9wF1NLEffU",
+          "name": "Jira SW Cloud account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Calculate Metrics & Format": {
+      "main": [
+        [
+          {
+            "node": "Send to Slack",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Calculate Previous Week": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Every Monday 8am": {
+      "main": [
+        [
+          {
+            "node": "Calculate Previous Week",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Calculate Metrics & Format",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "8fcc9825-8cc0-4c78-bea7-d42971868bfa",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "52f226c0d49ae0f952a8b1d90f679d905a021a582e86cd5bce537a130a27a89b"
+  },
+  "id": "dvIpja2CuDfmKqQf",
+  "tags": []
+}
