@@ -1,0 +1,5490 @@
+{
+  "period": {
+    "start_date": "2025-10-20",
+    "end_date": "2026-04-20"
+  },
+  "projects": [
+    "IA",
+    "DATA",
+    "SAOP",
+    "SAOP2"
+  ],
+  "total_weeks": 27,
+  "total_issues": 700,
+  "developer_summaries": [
+    {
+      "developer": "Luis Felipe Cordeiro Sena",
+      "total_tickets": 67,
+      "total_story_points": 128.5,
+      "tickets_with_sp": 60,
+      "tickets_without_sp": 7,
+      "avg_tickets_per_week": 3.4,
+      "avg_sp_per_week": 6.4,
+      "weeks_active": 20
+    },
+    {
+      "developer": "Fabio Rodrigues",
+      "total_tickets": 57,
+      "total_story_points": 113.0,
+      "tickets_with_sp": 46,
+      "tickets_without_sp": 11,
+      "avg_tickets_per_week": 2.6,
+      "avg_sp_per_week": 5.1,
+      "weeks_active": 22
+    },
+    {
+      "developer": "Jo\u00e3o Ricardo",
+      "total_tickets": 37,
+      "total_story_points": 112.0,
+      "tickets_with_sp": 36,
+      "tickets_without_sp": 1,
+      "avg_tickets_per_week": 2.2,
+      "avg_sp_per_week": 6.6,
+      "weeks_active": 17
+    },
+    {
+      "developer": "Jo\u00e3o Victor Leahy de Melo",
+      "total_tickets": 41,
+      "total_story_points": 105.0,
+      "tickets_with_sp": 37,
+      "tickets_without_sp": 4,
+      "avg_tickets_per_week": 2.4,
+      "avg_sp_per_week": 6.2,
+      "weeks_active": 17
+    },
+    {
+      "developer": "Charlie Eads",
+      "total_tickets": 48,
+      "total_story_points": 96.0,
+      "tickets_with_sp": 48,
+      "tickets_without_sp": 0,
+      "avg_tickets_per_week": 3.7,
+      "avg_sp_per_week": 7.4,
+      "weeks_active": 13
+    },
+    {
+      "developer": "Carlos Nilton Ara\u00fajo Corr\u00eaa",
+      "total_tickets": 102,
+      "total_story_points": 69.0,
+      "tickets_with_sp": 23,
+      "tickets_without_sp": 79,
+      "avg_tickets_per_week": 5.7,
+      "avg_sp_per_week": 3.8,
+      "weeks_active": 18
+    },
+    {
+      "developer": "Ioan Mihali",
+      "total_tickets": 43,
+      "total_story_points": 57.0,
+      "tickets_with_sp": 27,
+      "tickets_without_sp": 16,
+      "avg_tickets_per_week": 2.5,
+      "avg_sp_per_week": 3.4,
+      "weeks_active": 17
+    },
+    {
+      "developer": "Matheus Batistela",
+      "total_tickets": 62,
+      "total_story_points": 50.5,
+      "tickets_with_sp": 18,
+      "tickets_without_sp": 44,
+      "avg_tickets_per_week": 3.4,
+      "avg_sp_per_week": 2.8,
+      "weeks_active": 18
+    },
+    {
+      "developer": "Rai Tamarindo",
+      "total_tickets": 29,
+      "total_story_points": 31.0,
+      "tickets_with_sp": 15,
+      "tickets_without_sp": 14,
+      "avg_tickets_per_week": 2.2,
+      "avg_sp_per_week": 2.4,
+      "weeks_active": 13
+    },
+    {
+      "developer": "Unassigned",
+      "total_tickets": 47,
+      "total_story_points": 18.0,
+      "tickets_with_sp": 7,
+      "tickets_without_sp": 40,
+      "avg_tickets_per_week": 3.1,
+      "avg_sp_per_week": 1.2,
+      "weeks_active": 15
+    },
+    {
+      "developer": "Jos\u00e9 Paulo M Rey Alvarez",
+      "total_tickets": 42,
+      "total_story_points": 10.0,
+      "tickets_with_sp": 2,
+      "tickets_without_sp": 40,
+      "avg_tickets_per_week": 2.5,
+      "avg_sp_per_week": 0.6,
+      "weeks_active": 17
+    },
+    {
+      "developer": "moshe avidor",
+      "total_tickets": 8,
+      "total_story_points": 8.0,
+      "tickets_with_sp": 6,
+      "tickets_without_sp": 2,
+      "avg_tickets_per_week": 1.6,
+      "avg_sp_per_week": 1.6,
+      "weeks_active": 5
+    },
+    {
+      "developer": "Roberto Leit\u00e3o",
+      "total_tickets": 52,
+      "total_story_points": 7.0,
+      "tickets_with_sp": 7,
+      "tickets_without_sp": 45,
+      "avg_tickets_per_week": 3.7,
+      "avg_sp_per_week": 0.5,
+      "weeks_active": 14
+    },
+    {
+      "developer": "Caroline Sharpe",
+      "total_tickets": 9,
+      "total_story_points": 4.0,
+      "tickets_with_sp": 3,
+      "tickets_without_sp": 6,
+      "avg_tickets_per_week": 1.8,
+      "avg_sp_per_week": 0.8,
+      "weeks_active": 5
+    },
+    {
+      "developer": "joao.soares",
+      "total_tickets": 2,
+      "total_story_points": 4.0,
+      "tickets_with_sp": 1,
+      "tickets_without_sp": 1,
+      "avg_tickets_per_week": 1.0,
+      "avg_sp_per_week": 2.0,
+      "weeks_active": 2
+    },
+    {
+      "developer": "Luana Trambaioli",
+      "total_tickets": 13,
+      "total_story_points": 2.0,
+      "tickets_with_sp": 1,
+      "tickets_without_sp": 12,
+      "avg_tickets_per_week": 3.2,
+      "avg_sp_per_week": 0.5,
+      "weeks_active": 4
+    },
+    {
+      "developer": "Aviran Cohen",
+      "total_tickets": 3,
+      "total_story_points": 1.0,
+      "tickets_with_sp": 1,
+      "tickets_without_sp": 2,
+      "avg_tickets_per_week": 1.5,
+      "avg_sp_per_week": 0.5,
+      "weeks_active": 2
+    },
+    {
+      "developer": "Anat Mizrahi",
+      "total_tickets": 1,
+      "total_story_points": 0.0,
+      "tickets_with_sp": 0,
+      "tickets_without_sp": 1,
+      "avg_tickets_per_week": 1.0,
+      "avg_sp_per_week": 0.0,
+      "weeks_active": 1
+    },
+    {
+      "developer": "Henry Noke",
+      "total_tickets": 2,
+      "total_story_points": 0.0,
+      "tickets_with_sp": 0,
+      "tickets_without_sp": 2,
+      "avg_tickets_per_week": 1.0,
+      "avg_sp_per_week": 0.0,
+      "weeks_active": 2
+    },
+    {
+      "developer": "Luciano Bargmann",
+      "total_tickets": 11,
+      "total_story_points": 0.0,
+      "tickets_with_sp": 0,
+      "tickets_without_sp": 11,
+      "avg_tickets_per_week": 1.8,
+      "avg_sp_per_week": 0.0,
+      "weeks_active": 6
+    },
+    {
+      "developer": "Maria Talhate",
+      "total_tickets": 16,
+      "total_story_points": 0.0,
+      "tickets_with_sp": 0,
+      "tickets_without_sp": 16,
+      "avg_tickets_per_week": 2.0,
+      "avg_sp_per_week": 0.0,
+      "weeks_active": 8
+    },
+    {
+      "developer": "Ra\u00ed Tamarindo",
+      "total_tickets": 2,
+      "total_story_points": 0.0,
+      "tickets_with_sp": 0,
+      "tickets_without_sp": 2,
+      "avg_tickets_per_week": 1.0,
+      "avg_sp_per_week": 0.0,
+      "weeks_active": 2
+    },
+    {
+      "developer": "Roberto Leitao",
+      "total_tickets": 2,
+      "total_story_points": 0.0,
+      "tickets_with_sp": 0,
+      "tickets_without_sp": 2,
+      "avg_tickets_per_week": 1.0,
+      "avg_sp_per_week": 0.0,
+      "weeks_active": 2
+    },
+    {
+      "developer": "Sara Tatiana Golian",
+      "total_tickets": 4,
+      "total_story_points": 0.0,
+      "tickets_with_sp": 0,
+      "tickets_without_sp": 4,
+      "avg_tickets_per_week": 2.0,
+      "avg_sp_per_week": 0.0,
+      "weeks_active": 2
+    }
+  ],
+  "weekly_breakdown": {
+    "Fabio Rodrigues": [
+      {
+        "week_start": "2025-10-20",
+        "week_end": "2025-10-26",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2025-10-27",
+        "week_end": "2025-11-02",
+        "ticket_count": 3,
+        "story_points": 1.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 2
+      },
+      {
+        "week_start": "2025-11-03",
+        "week_end": "2025-11-09",
+        "ticket_count": 3,
+        "story_points": 8.0,
+        "tickets_with_sp": 3,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-10",
+        "week_end": "2025-11-16",
+        "ticket_count": 1,
+        "story_points": 2.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-17",
+        "week_end": "2025-11-23",
+        "ticket_count": 2,
+        "story_points": 5.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2025-11-24",
+        "week_end": "2025-11-30",
+        "ticket_count": 2,
+        "story_points": 5.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2025-12-01",
+        "week_end": "2025-12-07",
+        "ticket_count": 3,
+        "story_points": 10.0,
+        "tickets_with_sp": 3,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-08",
+        "week_end": "2025-12-14",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-15",
+        "week_end": "2025-12-21",
+        "ticket_count": 1,
+        "story_points": 1.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-22",
+        "week_end": "2025-12-28",
+        "ticket_count": 1,
+        "story_points": 5.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-29",
+        "week_end": "2026-01-04",
+        "ticket_count": 1,
+        "story_points": 1.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-05",
+        "week_end": "2026-01-11",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-12",
+        "week_end": "2026-01-18",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-19",
+        "week_end": "2026-01-25",
+        "ticket_count": 4,
+        "story_points": 8.0,
+        "tickets_with_sp": 4,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-26",
+        "week_end": "2026-02-01",
+        "ticket_count": 3,
+        "story_points": 9.0,
+        "tickets_with_sp": 3,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-02",
+        "week_end": "2026-02-08",
+        "ticket_count": 2,
+        "story_points": 3.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-09",
+        "week_end": "2026-02-15",
+        "ticket_count": 4,
+        "story_points": 9.0,
+        "tickets_with_sp": 4,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-16",
+        "week_end": "2026-02-22",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-23",
+        "week_end": "2026-03-01",
+        "ticket_count": 2,
+        "story_points": 3.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-03-02",
+        "week_end": "2026-03-08",
+        "ticket_count": 2,
+        "story_points": 8.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-09",
+        "week_end": "2026-03-15",
+        "ticket_count": 1,
+        "story_points": 2.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-16",
+        "week_end": "2026-03-22",
+        "ticket_count": 2,
+        "story_points": 2.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-03-23",
+        "week_end": "2026-03-29",
+        "ticket_count": 3,
+        "story_points": 11.0,
+        "tickets_with_sp": 3,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-30",
+        "week_end": "2026-04-05",
+        "ticket_count": 1,
+        "story_points": 2.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-06",
+        "week_end": "2026-04-12",
+        "ticket_count": 4,
+        "story_points": 5.0,
+        "tickets_with_sp": 3,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-04-13",
+        "week_end": "2026-04-19",
+        "ticket_count": 11,
+        "story_points": 13.0,
+        "tickets_with_sp": 8,
+        "tickets_without_sp": 3
+      },
+      {
+        "week_start": "2026-04-20",
+        "week_end": "2026-04-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      }
+    ],
+    "Carlos Nilton Ara\u00fajo Corr\u00eaa": [
+      {
+        "week_start": "2025-10-20",
+        "week_end": "2025-10-26",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2025-10-27",
+        "week_end": "2025-11-02",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-03",
+        "week_end": "2025-11-09",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-10",
+        "week_end": "2025-11-16",
+        "ticket_count": 16,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 16
+      },
+      {
+        "week_start": "2025-11-17",
+        "week_end": "2025-11-23",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-24",
+        "week_end": "2025-11-30",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-01",
+        "week_end": "2025-12-07",
+        "ticket_count": 8,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 8
+      },
+      {
+        "week_start": "2025-12-08",
+        "week_end": "2025-12-14",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-15",
+        "week_end": "2025-12-21",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-22",
+        "week_end": "2025-12-28",
+        "ticket_count": 9,
+        "story_points": 5.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 7
+      },
+      {
+        "week_start": "2025-12-29",
+        "week_end": "2026-01-04",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-05",
+        "week_end": "2026-01-11",
+        "ticket_count": 2,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 2
+      },
+      {
+        "week_start": "2026-01-12",
+        "week_end": "2026-01-18",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-19",
+        "week_end": "2026-01-25",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-01-26",
+        "week_end": "2026-02-01",
+        "ticket_count": 3,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 3
+      },
+      {
+        "week_start": "2026-02-02",
+        "week_end": "2026-02-08",
+        "ticket_count": 2,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 2
+      },
+      {
+        "week_start": "2026-02-09",
+        "week_end": "2026-02-15",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-02-16",
+        "week_end": "2026-02-22",
+        "ticket_count": 3,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 3
+      },
+      {
+        "week_start": "2026-02-23",
+        "week_end": "2026-03-01",
+        "ticket_count": 2,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 2
+      },
+      {
+        "week_start": "2026-03-02",
+        "week_end": "2026-03-08",
+        "ticket_count": 25,
+        "story_points": 15.0,
+        "tickets_with_sp": 7,
+        "tickets_without_sp": 18
+      },
+      {
+        "week_start": "2026-03-09",
+        "week_end": "2026-03-15",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-03-16",
+        "week_end": "2026-03-22",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-03-23",
+        "week_end": "2026-03-29",
+        "ticket_count": 2,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 2
+      },
+      {
+        "week_start": "2026-03-30",
+        "week_end": "2026-04-05",
+        "ticket_count": 3,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 3
+      },
+      {
+        "week_start": "2026-04-06",
+        "week_end": "2026-04-12",
+        "ticket_count": 19,
+        "story_points": 42.0,
+        "tickets_with_sp": 12,
+        "tickets_without_sp": 7
+      },
+      {
+        "week_start": "2026-04-13",
+        "week_end": "2026-04-19",
+        "ticket_count": 3,
+        "story_points": 7.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-04-20",
+        "week_end": "2026-04-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      }
+    ],
+    "Matheus Batistela": [
+      {
+        "week_start": "2025-10-20",
+        "week_end": "2025-10-26",
+        "ticket_count": 1,
+        "story_points": 8.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-10-27",
+        "week_end": "2025-11-02",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-03",
+        "week_end": "2025-11-09",
+        "ticket_count": 1,
+        "story_points": 2.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-10",
+        "week_end": "2025-11-16",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-17",
+        "week_end": "2025-11-23",
+        "ticket_count": 1,
+        "story_points": 4.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-24",
+        "week_end": "2025-11-30",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-01",
+        "week_end": "2025-12-07",
+        "ticket_count": 2,
+        "story_points": 10.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-08",
+        "week_end": "2025-12-14",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-15",
+        "week_end": "2025-12-21",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-22",
+        "week_end": "2025-12-28",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-29",
+        "week_end": "2026-01-04",
+        "ticket_count": 1,
+        "story_points": 2.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-05",
+        "week_end": "2026-01-11",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-12",
+        "week_end": "2026-01-18",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-19",
+        "week_end": "2026-01-25",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-01-26",
+        "week_end": "2026-02-01",
+        "ticket_count": 3,
+        "story_points": 4.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-02-02",
+        "week_end": "2026-02-08",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-02-09",
+        "week_end": "2026-02-15",
+        "ticket_count": 2,
+        "story_points": 3.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-02-16",
+        "week_end": "2026-02-22",
+        "ticket_count": 2,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 2
+      },
+      {
+        "week_start": "2026-02-23",
+        "week_end": "2026-03-01",
+        "ticket_count": 7,
+        "story_points": 8.0,
+        "tickets_with_sp": 3,
+        "tickets_without_sp": 4
+      },
+      {
+        "week_start": "2026-03-02",
+        "week_end": "2026-03-08",
+        "ticket_count": 7,
+        "story_points": 5.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 6
+      },
+      {
+        "week_start": "2026-03-09",
+        "week_end": "2026-03-15",
+        "ticket_count": 10,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 10
+      },
+      {
+        "week_start": "2026-03-16",
+        "week_end": "2026-03-22",
+        "ticket_count": 6,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 6
+      },
+      {
+        "week_start": "2026-03-23",
+        "week_end": "2026-03-29",
+        "ticket_count": 6,
+        "story_points": 1.5,
+        "tickets_with_sp": 3,
+        "tickets_without_sp": 3
+      },
+      {
+        "week_start": "2026-03-30",
+        "week_end": "2026-04-05",
+        "ticket_count": 2,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 2
+      },
+      {
+        "week_start": "2026-04-06",
+        "week_end": "2026-04-12",
+        "ticket_count": 7,
+        "story_points": 1.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 6
+      },
+      {
+        "week_start": "2026-04-13",
+        "week_end": "2026-04-19",
+        "ticket_count": 2,
+        "story_points": 2.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-04-20",
+        "week_end": "2026-04-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      }
+    ],
+    "Jo\u00e3o Victor Leahy de Melo": [
+      {
+        "week_start": "2025-10-20",
+        "week_end": "2025-10-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-10-27",
+        "week_end": "2025-11-02",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-03",
+        "week_end": "2025-11-09",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-10",
+        "week_end": "2025-11-16",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-17",
+        "week_end": "2025-11-23",
+        "ticket_count": 5,
+        "story_points": 12.0,
+        "tickets_with_sp": 5,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-24",
+        "week_end": "2025-11-30",
+        "ticket_count": 2,
+        "story_points": 4.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-01",
+        "week_end": "2025-12-07",
+        "ticket_count": 1,
+        "story_points": 3.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-08",
+        "week_end": "2025-12-14",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-15",
+        "week_end": "2025-12-21",
+        "ticket_count": 1,
+        "story_points": 3.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-22",
+        "week_end": "2025-12-28",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-29",
+        "week_end": "2026-01-04",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-05",
+        "week_end": "2026-01-11",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-12",
+        "week_end": "2026-01-18",
+        "ticket_count": 1,
+        "story_points": 3.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-19",
+        "week_end": "2026-01-25",
+        "ticket_count": 4,
+        "story_points": 14.0,
+        "tickets_with_sp": 4,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-26",
+        "week_end": "2026-02-01",
+        "ticket_count": 1,
+        "story_points": 2.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-02",
+        "week_end": "2026-02-08",
+        "ticket_count": 2,
+        "story_points": 6.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-09",
+        "week_end": "2026-02-15",
+        "ticket_count": 3,
+        "story_points": 6.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-02-16",
+        "week_end": "2026-02-22",
+        "ticket_count": 5,
+        "story_points": 7.0,
+        "tickets_with_sp": 3,
+        "tickets_without_sp": 2
+      },
+      {
+        "week_start": "2026-02-23",
+        "week_end": "2026-03-01",
+        "ticket_count": 3,
+        "story_points": 7.0,
+        "tickets_with_sp": 3,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-02",
+        "week_end": "2026-03-08",
+        "ticket_count": 2,
+        "story_points": 7.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-09",
+        "week_end": "2026-03-15",
+        "ticket_count": 3,
+        "story_points": 7.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-03-16",
+        "week_end": "2026-03-22",
+        "ticket_count": 2,
+        "story_points": 5.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-23",
+        "week_end": "2026-03-29",
+        "ticket_count": 2,
+        "story_points": 7.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-30",
+        "week_end": "2026-04-05",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-06",
+        "week_end": "2026-04-12",
+        "ticket_count": 3,
+        "story_points": 9.0,
+        "tickets_with_sp": 3,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-13",
+        "week_end": "2026-04-19",
+        "ticket_count": 1,
+        "story_points": 3.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-20",
+        "week_end": "2026-04-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      }
+    ],
+    "Ioan Mihali": [
+      {
+        "week_start": "2025-10-20",
+        "week_end": "2025-10-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-10-27",
+        "week_end": "2025-11-02",
+        "ticket_count": 2,
+        "story_points": 5.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-03",
+        "week_end": "2025-11-09",
+        "ticket_count": 4,
+        "story_points": 2.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 3
+      },
+      {
+        "week_start": "2025-11-10",
+        "week_end": "2025-11-16",
+        "ticket_count": 3,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 3
+      },
+      {
+        "week_start": "2025-11-17",
+        "week_end": "2025-11-23",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-24",
+        "week_end": "2025-11-30",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-01",
+        "week_end": "2025-12-07",
+        "ticket_count": 1,
+        "story_points": 1.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-08",
+        "week_end": "2025-12-14",
+        "ticket_count": 2,
+        "story_points": 3.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-15",
+        "week_end": "2025-12-21",
+        "ticket_count": 4,
+        "story_points": 5.0,
+        "tickets_with_sp": 3,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2025-12-22",
+        "week_end": "2025-12-28",
+        "ticket_count": 1,
+        "story_points": 3.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-29",
+        "week_end": "2026-01-04",
+        "ticket_count": 1,
+        "story_points": 3.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-05",
+        "week_end": "2026-01-11",
+        "ticket_count": 1,
+        "story_points": 5.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-12",
+        "week_end": "2026-01-18",
+        "ticket_count": 1,
+        "story_points": 3.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-19",
+        "week_end": "2026-01-25",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-26",
+        "week_end": "2026-02-01",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-02",
+        "week_end": "2026-02-08",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-02-09",
+        "week_end": "2026-02-15",
+        "ticket_count": 5,
+        "story_points": 6.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 3
+      },
+      {
+        "week_start": "2026-02-16",
+        "week_end": "2026-02-22",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-02-23",
+        "week_end": "2026-03-01",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-02",
+        "week_end": "2026-03-08",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-09",
+        "week_end": "2026-03-15",
+        "ticket_count": 7,
+        "story_points": 5.0,
+        "tickets_with_sp": 3,
+        "tickets_without_sp": 4
+      },
+      {
+        "week_start": "2026-03-16",
+        "week_end": "2026-03-22",
+        "ticket_count": 4,
+        "story_points": 10.0,
+        "tickets_with_sp": 4,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-23",
+        "week_end": "2026-03-29",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-30",
+        "week_end": "2026-04-05",
+        "ticket_count": 1,
+        "story_points": 3.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-06",
+        "week_end": "2026-04-12",
+        "ticket_count": 4,
+        "story_points": 3.0,
+        "tickets_with_sp": 4,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-13",
+        "week_end": "2026-04-19",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-20",
+        "week_end": "2026-04-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      }
+    ],
+    "Jo\u00e3o Ricardo": [
+      {
+        "week_start": "2025-10-20",
+        "week_end": "2025-10-26",
+        "ticket_count": 1,
+        "story_points": 2.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-10-27",
+        "week_end": "2025-11-02",
+        "ticket_count": 2,
+        "story_points": 5.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-03",
+        "week_end": "2025-11-09",
+        "ticket_count": 2,
+        "story_points": 7.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-10",
+        "week_end": "2025-11-16",
+        "ticket_count": 1,
+        "story_points": 4.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-17",
+        "week_end": "2025-11-23",
+        "ticket_count": 2,
+        "story_points": 5.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-24",
+        "week_end": "2025-11-30",
+        "ticket_count": 1,
+        "story_points": 2.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-01",
+        "week_end": "2025-12-07",
+        "ticket_count": 5,
+        "story_points": 11.0,
+        "tickets_with_sp": 5,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-08",
+        "week_end": "2025-12-14",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-15",
+        "week_end": "2025-12-21",
+        "ticket_count": 3,
+        "story_points": 8.0,
+        "tickets_with_sp": 3,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-22",
+        "week_end": "2025-12-28",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-29",
+        "week_end": "2026-01-04",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-05",
+        "week_end": "2026-01-11",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-12",
+        "week_end": "2026-01-18",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-19",
+        "week_end": "2026-01-25",
+        "ticket_count": 3,
+        "story_points": 9.0,
+        "tickets_with_sp": 3,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-26",
+        "week_end": "2026-02-01",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-02",
+        "week_end": "2026-02-08",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-09",
+        "week_end": "2026-02-15",
+        "ticket_count": 1,
+        "story_points": 5.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-16",
+        "week_end": "2026-02-22",
+        "ticket_count": 1,
+        "story_points": 3.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-23",
+        "week_end": "2026-03-01",
+        "ticket_count": 1,
+        "story_points": 3.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-02",
+        "week_end": "2026-03-08",
+        "ticket_count": 1,
+        "story_points": 4.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-09",
+        "week_end": "2026-03-15",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-16",
+        "week_end": "2026-03-22",
+        "ticket_count": 1,
+        "story_points": 4.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-23",
+        "week_end": "2026-03-29",
+        "ticket_count": 3,
+        "story_points": 10.0,
+        "tickets_with_sp": 3,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-30",
+        "week_end": "2026-04-05",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-06",
+        "week_end": "2026-04-12",
+        "ticket_count": 3,
+        "story_points": 6.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-04-13",
+        "week_end": "2026-04-19",
+        "ticket_count": 6,
+        "story_points": 24.0,
+        "tickets_with_sp": 6,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-20",
+        "week_end": "2026-04-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      }
+    ],
+    "Sara Tatiana Golian": [
+      {
+        "week_start": "2025-10-20",
+        "week_end": "2025-10-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-10-27",
+        "week_end": "2025-11-02",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-03",
+        "week_end": "2025-11-09",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-10",
+        "week_end": "2025-11-16",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-17",
+        "week_end": "2025-11-23",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-24",
+        "week_end": "2025-11-30",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-01",
+        "week_end": "2025-12-07",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-08",
+        "week_end": "2025-12-14",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-15",
+        "week_end": "2025-12-21",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-22",
+        "week_end": "2025-12-28",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-29",
+        "week_end": "2026-01-04",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-05",
+        "week_end": "2026-01-11",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-12",
+        "week_end": "2026-01-18",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-19",
+        "week_end": "2026-01-25",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-26",
+        "week_end": "2026-02-01",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-02",
+        "week_end": "2026-02-08",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-09",
+        "week_end": "2026-02-15",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-16",
+        "week_end": "2026-02-22",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-23",
+        "week_end": "2026-03-01",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-02",
+        "week_end": "2026-03-08",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-09",
+        "week_end": "2026-03-15",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-16",
+        "week_end": "2026-03-22",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-23",
+        "week_end": "2026-03-29",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-03-30",
+        "week_end": "2026-04-05",
+        "ticket_count": 3,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 3
+      },
+      {
+        "week_start": "2026-04-06",
+        "week_end": "2026-04-12",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-13",
+        "week_end": "2026-04-19",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-20",
+        "week_end": "2026-04-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      }
+    ],
+    "Anat Mizrahi": [
+      {
+        "week_start": "2025-10-20",
+        "week_end": "2025-10-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-10-27",
+        "week_end": "2025-11-02",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-03",
+        "week_end": "2025-11-09",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-10",
+        "week_end": "2025-11-16",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-17",
+        "week_end": "2025-11-23",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-24",
+        "week_end": "2025-11-30",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-01",
+        "week_end": "2025-12-07",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-08",
+        "week_end": "2025-12-14",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-15",
+        "week_end": "2025-12-21",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-22",
+        "week_end": "2025-12-28",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-29",
+        "week_end": "2026-01-04",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-05",
+        "week_end": "2026-01-11",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-12",
+        "week_end": "2026-01-18",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-19",
+        "week_end": "2026-01-25",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-26",
+        "week_end": "2026-02-01",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-02",
+        "week_end": "2026-02-08",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-09",
+        "week_end": "2026-02-15",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-16",
+        "week_end": "2026-02-22",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-23",
+        "week_end": "2026-03-01",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-02",
+        "week_end": "2026-03-08",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-09",
+        "week_end": "2026-03-15",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-16",
+        "week_end": "2026-03-22",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-23",
+        "week_end": "2026-03-29",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-03-30",
+        "week_end": "2026-04-05",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-06",
+        "week_end": "2026-04-12",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-13",
+        "week_end": "2026-04-19",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-20",
+        "week_end": "2026-04-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      }
+    ],
+    "Henry Noke": [
+      {
+        "week_start": "2025-10-20",
+        "week_end": "2025-10-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-10-27",
+        "week_end": "2025-11-02",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-03",
+        "week_end": "2025-11-09",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-10",
+        "week_end": "2025-11-16",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-17",
+        "week_end": "2025-11-23",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-24",
+        "week_end": "2025-11-30",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-01",
+        "week_end": "2025-12-07",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-08",
+        "week_end": "2025-12-14",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-15",
+        "week_end": "2025-12-21",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-22",
+        "week_end": "2025-12-28",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-29",
+        "week_end": "2026-01-04",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-05",
+        "week_end": "2026-01-11",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-12",
+        "week_end": "2026-01-18",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-19",
+        "week_end": "2026-01-25",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-26",
+        "week_end": "2026-02-01",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-02",
+        "week_end": "2026-02-08",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-09",
+        "week_end": "2026-02-15",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-16",
+        "week_end": "2026-02-22",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-23",
+        "week_end": "2026-03-01",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-02",
+        "week_end": "2026-03-08",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-09",
+        "week_end": "2026-03-15",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-16",
+        "week_end": "2026-03-22",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-23",
+        "week_end": "2026-03-29",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-03-30",
+        "week_end": "2026-04-05",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-06",
+        "week_end": "2026-04-12",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-04-13",
+        "week_end": "2026-04-19",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-20",
+        "week_end": "2026-04-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      }
+    ],
+    "Ra\u00ed Tamarindo": [
+      {
+        "week_start": "2025-10-20",
+        "week_end": "2025-10-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-10-27",
+        "week_end": "2025-11-02",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-03",
+        "week_end": "2025-11-09",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-10",
+        "week_end": "2025-11-16",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-17",
+        "week_end": "2025-11-23",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-24",
+        "week_end": "2025-11-30",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-01",
+        "week_end": "2025-12-07",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-08",
+        "week_end": "2025-12-14",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-15",
+        "week_end": "2025-12-21",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-22",
+        "week_end": "2025-12-28",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-29",
+        "week_end": "2026-01-04",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-05",
+        "week_end": "2026-01-11",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-12",
+        "week_end": "2026-01-18",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-19",
+        "week_end": "2026-01-25",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-26",
+        "week_end": "2026-02-01",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-02",
+        "week_end": "2026-02-08",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-09",
+        "week_end": "2026-02-15",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-16",
+        "week_end": "2026-02-22",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-23",
+        "week_end": "2026-03-01",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-02",
+        "week_end": "2026-03-08",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-03-09",
+        "week_end": "2026-03-15",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-16",
+        "week_end": "2026-03-22",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-03-23",
+        "week_end": "2026-03-29",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-30",
+        "week_end": "2026-04-05",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-06",
+        "week_end": "2026-04-12",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-13",
+        "week_end": "2026-04-19",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-20",
+        "week_end": "2026-04-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      }
+    ],
+    "Rai Tamarindo": [
+      {
+        "week_start": "2025-10-20",
+        "week_end": "2025-10-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-10-27",
+        "week_end": "2025-11-02",
+        "ticket_count": 3,
+        "story_points": 2.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2025-11-03",
+        "week_end": "2025-11-09",
+        "ticket_count": 4,
+        "story_points": 7.0,
+        "tickets_with_sp": 4,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-10",
+        "week_end": "2025-11-16",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-17",
+        "week_end": "2025-11-23",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2025-11-24",
+        "week_end": "2025-11-30",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-01",
+        "week_end": "2025-12-07",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-08",
+        "week_end": "2025-12-14",
+        "ticket_count": 5,
+        "story_points": 8.0,
+        "tickets_with_sp": 3,
+        "tickets_without_sp": 2
+      },
+      {
+        "week_start": "2025-12-15",
+        "week_end": "2025-12-21",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2025-12-22",
+        "week_end": "2025-12-28",
+        "ticket_count": 2,
+        "story_points": 1.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2025-12-29",
+        "week_end": "2026-01-04",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-05",
+        "week_end": "2026-01-11",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-12",
+        "week_end": "2026-01-18",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-19",
+        "week_end": "2026-01-25",
+        "ticket_count": 3,
+        "story_points": 6.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-01-26",
+        "week_end": "2026-02-01",
+        "ticket_count": 1,
+        "story_points": 3.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-02",
+        "week_end": "2026-02-08",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-09",
+        "week_end": "2026-02-15",
+        "ticket_count": 2,
+        "story_points": 1.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-02-16",
+        "week_end": "2026-02-22",
+        "ticket_count": 1,
+        "story_points": 3.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-23",
+        "week_end": "2026-03-01",
+        "ticket_count": 2,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 2
+      },
+      {
+        "week_start": "2026-03-02",
+        "week_end": "2026-03-08",
+        "ticket_count": 2,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 2
+      },
+      {
+        "week_start": "2026-03-09",
+        "week_end": "2026-03-15",
+        "ticket_count": 2,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 2
+      },
+      {
+        "week_start": "2026-03-16",
+        "week_end": "2026-03-22",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-23",
+        "week_end": "2026-03-29",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-30",
+        "week_end": "2026-04-05",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-06",
+        "week_end": "2026-04-12",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-13",
+        "week_end": "2026-04-19",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-20",
+        "week_end": "2026-04-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      }
+    ],
+    "Maria Talhate": [
+      {
+        "week_start": "2025-10-20",
+        "week_end": "2025-10-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-10-27",
+        "week_end": "2025-11-02",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-03",
+        "week_end": "2025-11-09",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-10",
+        "week_end": "2025-11-16",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-17",
+        "week_end": "2025-11-23",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-24",
+        "week_end": "2025-11-30",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-01",
+        "week_end": "2025-12-07",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-08",
+        "week_end": "2025-12-14",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-15",
+        "week_end": "2025-12-21",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-22",
+        "week_end": "2025-12-28",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2025-12-29",
+        "week_end": "2026-01-04",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-05",
+        "week_end": "2026-01-11",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-12",
+        "week_end": "2026-01-18",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-01-19",
+        "week_end": "2026-01-25",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-26",
+        "week_end": "2026-02-01",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-02",
+        "week_end": "2026-02-08",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-09",
+        "week_end": "2026-02-15",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-16",
+        "week_end": "2026-02-22",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-23",
+        "week_end": "2026-03-01",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-03-02",
+        "week_end": "2026-03-08",
+        "ticket_count": 2,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 2
+      },
+      {
+        "week_start": "2026-03-09",
+        "week_end": "2026-03-15",
+        "ticket_count": 5,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 5
+      },
+      {
+        "week_start": "2026-03-16",
+        "week_end": "2026-03-22",
+        "ticket_count": 3,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 3
+      },
+      {
+        "week_start": "2026-03-23",
+        "week_end": "2026-03-29",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-03-30",
+        "week_end": "2026-04-05",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-06",
+        "week_end": "2026-04-12",
+        "ticket_count": 2,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 2
+      },
+      {
+        "week_start": "2026-04-13",
+        "week_end": "2026-04-19",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-20",
+        "week_end": "2026-04-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      }
+    ],
+    "Luciano Bargmann": [
+      {
+        "week_start": "2025-10-20",
+        "week_end": "2025-10-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-10-27",
+        "week_end": "2025-11-02",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-03",
+        "week_end": "2025-11-09",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-10",
+        "week_end": "2025-11-16",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-17",
+        "week_end": "2025-11-23",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-24",
+        "week_end": "2025-11-30",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-01",
+        "week_end": "2025-12-07",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-08",
+        "week_end": "2025-12-14",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-15",
+        "week_end": "2025-12-21",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-22",
+        "week_end": "2025-12-28",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-29",
+        "week_end": "2026-01-04",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-05",
+        "week_end": "2026-01-11",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-12",
+        "week_end": "2026-01-18",
+        "ticket_count": 2,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 2
+      },
+      {
+        "week_start": "2026-01-19",
+        "week_end": "2026-01-25",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-26",
+        "week_end": "2026-02-01",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-02-02",
+        "week_end": "2026-02-08",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-09",
+        "week_end": "2026-02-15",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-16",
+        "week_end": "2026-02-22",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-02-23",
+        "week_end": "2026-03-01",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-02",
+        "week_end": "2026-03-08",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-03-09",
+        "week_end": "2026-03-15",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-16",
+        "week_end": "2026-03-22",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-23",
+        "week_end": "2026-03-29",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-30",
+        "week_end": "2026-04-05",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-06",
+        "week_end": "2026-04-12",
+        "ticket_count": 5,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 5
+      },
+      {
+        "week_start": "2026-04-13",
+        "week_end": "2026-04-19",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-04-20",
+        "week_end": "2026-04-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      }
+    ],
+    "Roberto Leit\u00e3o": [
+      {
+        "week_start": "2025-10-20",
+        "week_end": "2025-10-26",
+        "ticket_count": 3,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 3
+      },
+      {
+        "week_start": "2025-10-27",
+        "week_end": "2025-11-02",
+        "ticket_count": 6,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 6
+      },
+      {
+        "week_start": "2025-11-03",
+        "week_end": "2025-11-09",
+        "ticket_count": 5,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 5
+      },
+      {
+        "week_start": "2025-11-10",
+        "week_end": "2025-11-16",
+        "ticket_count": 2,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 2
+      },
+      {
+        "week_start": "2025-11-17",
+        "week_end": "2025-11-23",
+        "ticket_count": 3,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 3
+      },
+      {
+        "week_start": "2025-11-24",
+        "week_end": "2025-11-30",
+        "ticket_count": 11,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 11
+      },
+      {
+        "week_start": "2025-12-01",
+        "week_end": "2025-12-07",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-08",
+        "week_end": "2025-12-14",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-15",
+        "week_end": "2025-12-21",
+        "ticket_count": 8,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 8
+      },
+      {
+        "week_start": "2025-12-22",
+        "week_end": "2025-12-28",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-29",
+        "week_end": "2026-01-04",
+        "ticket_count": 2,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 2
+      },
+      {
+        "week_start": "2026-01-05",
+        "week_end": "2026-01-11",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-12",
+        "week_end": "2026-01-18",
+        "ticket_count": 4,
+        "story_points": 4.0,
+        "tickets_with_sp": 4,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-19",
+        "week_end": "2026-01-25",
+        "ticket_count": 2,
+        "story_points": 1.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-01-26",
+        "week_end": "2026-02-01",
+        "ticket_count": 3,
+        "story_points": 2.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-02-02",
+        "week_end": "2026-02-08",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-02-09",
+        "week_end": "2026-02-15",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-16",
+        "week_end": "2026-02-22",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-02-23",
+        "week_end": "2026-03-01",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-02",
+        "week_end": "2026-03-08",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-09",
+        "week_end": "2026-03-15",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-16",
+        "week_end": "2026-03-22",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-03-23",
+        "week_end": "2026-03-29",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-30",
+        "week_end": "2026-04-05",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-06",
+        "week_end": "2026-04-12",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-13",
+        "week_end": "2026-04-19",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-20",
+        "week_end": "2026-04-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      }
+    ],
+    "Luana Trambaioli": [
+      {
+        "week_start": "2025-10-20",
+        "week_end": "2025-10-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-10-27",
+        "week_end": "2025-11-02",
+        "ticket_count": 1,
+        "story_points": 2.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-03",
+        "week_end": "2025-11-09",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-10",
+        "week_end": "2025-11-16",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-17",
+        "week_end": "2025-11-23",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-24",
+        "week_end": "2025-11-30",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-01",
+        "week_end": "2025-12-07",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-08",
+        "week_end": "2025-12-14",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-15",
+        "week_end": "2025-12-21",
+        "ticket_count": 5,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 5
+      },
+      {
+        "week_start": "2025-12-22",
+        "week_end": "2025-12-28",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-29",
+        "week_end": "2026-01-04",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-05",
+        "week_end": "2026-01-11",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-12",
+        "week_end": "2026-01-18",
+        "ticket_count": 5,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 5
+      },
+      {
+        "week_start": "2026-01-19",
+        "week_end": "2026-01-25",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-26",
+        "week_end": "2026-02-01",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-02",
+        "week_end": "2026-02-08",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-09",
+        "week_end": "2026-02-15",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-16",
+        "week_end": "2026-02-22",
+        "ticket_count": 2,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 2
+      },
+      {
+        "week_start": "2026-02-23",
+        "week_end": "2026-03-01",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-02",
+        "week_end": "2026-03-08",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-09",
+        "week_end": "2026-03-15",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-16",
+        "week_end": "2026-03-22",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-23",
+        "week_end": "2026-03-29",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-30",
+        "week_end": "2026-04-05",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-06",
+        "week_end": "2026-04-12",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-13",
+        "week_end": "2026-04-19",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-20",
+        "week_end": "2026-04-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      }
+    ],
+    "Unassigned": [
+      {
+        "week_start": "2025-10-20",
+        "week_end": "2025-10-26",
+        "ticket_count": 10,
+        "story_points": 11.0,
+        "tickets_with_sp": 4,
+        "tickets_without_sp": 6
+      },
+      {
+        "week_start": "2025-10-27",
+        "week_end": "2025-11-02",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-03",
+        "week_end": "2025-11-09",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-10",
+        "week_end": "2025-11-16",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-17",
+        "week_end": "2025-11-23",
+        "ticket_count": 2,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 2
+      },
+      {
+        "week_start": "2025-11-24",
+        "week_end": "2025-11-30",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2025-12-01",
+        "week_end": "2025-12-07",
+        "ticket_count": 4,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 4
+      },
+      {
+        "week_start": "2025-12-08",
+        "week_end": "2025-12-14",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2025-12-15",
+        "week_end": "2025-12-21",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-22",
+        "week_end": "2025-12-28",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-29",
+        "week_end": "2026-01-04",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-01-05",
+        "week_end": "2026-01-11",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-01-12",
+        "week_end": "2026-01-18",
+        "ticket_count": 2,
+        "story_points": 1.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-01-19",
+        "week_end": "2026-01-25",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-26",
+        "week_end": "2026-02-01",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-02-02",
+        "week_end": "2026-02-08",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-09",
+        "week_end": "2026-02-15",
+        "ticket_count": 6,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 6
+      },
+      {
+        "week_start": "2026-02-16",
+        "week_end": "2026-02-22",
+        "ticket_count": 3,
+        "story_points": 3.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 2
+      },
+      {
+        "week_start": "2026-02-23",
+        "week_end": "2026-03-01",
+        "ticket_count": 7,
+        "story_points": 3.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 6
+      },
+      {
+        "week_start": "2026-03-02",
+        "week_end": "2026-03-08",
+        "ticket_count": 2,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 2
+      },
+      {
+        "week_start": "2026-03-09",
+        "week_end": "2026-03-15",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-16",
+        "week_end": "2026-03-22",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-23",
+        "week_end": "2026-03-29",
+        "ticket_count": 5,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 5
+      },
+      {
+        "week_start": "2026-03-30",
+        "week_end": "2026-04-05",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-06",
+        "week_end": "2026-04-12",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-04-13",
+        "week_end": "2026-04-19",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-20",
+        "week_end": "2026-04-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      }
+    ],
+    "Aviran Cohen": [
+      {
+        "week_start": "2025-10-20",
+        "week_end": "2025-10-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-10-27",
+        "week_end": "2025-11-02",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-03",
+        "week_end": "2025-11-09",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-10",
+        "week_end": "2025-11-16",
+        "ticket_count": 2,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 2
+      },
+      {
+        "week_start": "2025-11-17",
+        "week_end": "2025-11-23",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-24",
+        "week_end": "2025-11-30",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-01",
+        "week_end": "2025-12-07",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-08",
+        "week_end": "2025-12-14",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-15",
+        "week_end": "2025-12-21",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-22",
+        "week_end": "2025-12-28",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-29",
+        "week_end": "2026-01-04",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-05",
+        "week_end": "2026-01-11",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-12",
+        "week_end": "2026-01-18",
+        "ticket_count": 1,
+        "story_points": 1.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-19",
+        "week_end": "2026-01-25",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-26",
+        "week_end": "2026-02-01",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-02",
+        "week_end": "2026-02-08",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-09",
+        "week_end": "2026-02-15",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-16",
+        "week_end": "2026-02-22",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-23",
+        "week_end": "2026-03-01",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-02",
+        "week_end": "2026-03-08",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-09",
+        "week_end": "2026-03-15",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-16",
+        "week_end": "2026-03-22",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-23",
+        "week_end": "2026-03-29",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-30",
+        "week_end": "2026-04-05",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-06",
+        "week_end": "2026-04-12",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-13",
+        "week_end": "2026-04-19",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-20",
+        "week_end": "2026-04-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      }
+    ],
+    "moshe avidor": [
+      {
+        "week_start": "2025-10-20",
+        "week_end": "2025-10-26",
+        "ticket_count": 2,
+        "story_points": 4.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-10-27",
+        "week_end": "2025-11-02",
+        "ticket_count": 2,
+        "story_points": 2.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-03",
+        "week_end": "2025-11-09",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2025-11-10",
+        "week_end": "2025-11-16",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-17",
+        "week_end": "2025-11-23",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-24",
+        "week_end": "2025-11-30",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-01",
+        "week_end": "2025-12-07",
+        "ticket_count": 2,
+        "story_points": 2.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-08",
+        "week_end": "2025-12-14",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-15",
+        "week_end": "2025-12-21",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2025-12-22",
+        "week_end": "2025-12-28",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-29",
+        "week_end": "2026-01-04",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-05",
+        "week_end": "2026-01-11",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-12",
+        "week_end": "2026-01-18",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-19",
+        "week_end": "2026-01-25",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-26",
+        "week_end": "2026-02-01",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-02",
+        "week_end": "2026-02-08",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-09",
+        "week_end": "2026-02-15",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-16",
+        "week_end": "2026-02-22",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-23",
+        "week_end": "2026-03-01",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-02",
+        "week_end": "2026-03-08",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-09",
+        "week_end": "2026-03-15",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-16",
+        "week_end": "2026-03-22",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-23",
+        "week_end": "2026-03-29",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-30",
+        "week_end": "2026-04-05",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-06",
+        "week_end": "2026-04-12",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-13",
+        "week_end": "2026-04-19",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-20",
+        "week_end": "2026-04-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      }
+    ],
+    "Luis Felipe Cordeiro Sena": [
+      {
+        "week_start": "2025-10-20",
+        "week_end": "2025-10-26",
+        "ticket_count": 5,
+        "story_points": 12.0,
+        "tickets_with_sp": 5,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-10-27",
+        "week_end": "2025-11-02",
+        "ticket_count": 4,
+        "story_points": 8.0,
+        "tickets_with_sp": 4,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-03",
+        "week_end": "2025-11-09",
+        "ticket_count": 5,
+        "story_points": 11.0,
+        "tickets_with_sp": 5,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-10",
+        "week_end": "2025-11-16",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-17",
+        "week_end": "2025-11-23",
+        "ticket_count": 2,
+        "story_points": 6.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-24",
+        "week_end": "2025-11-30",
+        "ticket_count": 2,
+        "story_points": 5.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-01",
+        "week_end": "2025-12-07",
+        "ticket_count": 9,
+        "story_points": 20.5,
+        "tickets_with_sp": 9,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-08",
+        "week_end": "2025-12-14",
+        "ticket_count": 2,
+        "story_points": 1.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2025-12-15",
+        "week_end": "2025-12-21",
+        "ticket_count": 3,
+        "story_points": 2.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2025-12-22",
+        "week_end": "2025-12-28",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-29",
+        "week_end": "2026-01-04",
+        "ticket_count": 2,
+        "story_points": 5.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-05",
+        "week_end": "2026-01-11",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-12",
+        "week_end": "2026-01-18",
+        "ticket_count": 3,
+        "story_points": 5.0,
+        "tickets_with_sp": 3,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-19",
+        "week_end": "2026-01-25",
+        "ticket_count": 3,
+        "story_points": 5.0,
+        "tickets_with_sp": 3,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-26",
+        "week_end": "2026-02-01",
+        "ticket_count": 1,
+        "story_points": 1.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-02",
+        "week_end": "2026-02-08",
+        "ticket_count": 4,
+        "story_points": 9.0,
+        "tickets_with_sp": 4,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-09",
+        "week_end": "2026-02-15",
+        "ticket_count": 2,
+        "story_points": 3.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-16",
+        "week_end": "2026-02-22",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-23",
+        "week_end": "2026-03-01",
+        "ticket_count": 9,
+        "story_points": 25.0,
+        "tickets_with_sp": 9,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-02",
+        "week_end": "2026-03-08",
+        "ticket_count": 3,
+        "story_points": 4.0,
+        "tickets_with_sp": 3,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-09",
+        "week_end": "2026-03-15",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-16",
+        "week_end": "2026-03-22",
+        "ticket_count": 5,
+        "story_points": 2.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 4
+      },
+      {
+        "week_start": "2026-03-23",
+        "week_end": "2026-03-29",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-03-30",
+        "week_end": "2026-04-05",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-06",
+        "week_end": "2026-04-12",
+        "ticket_count": 1,
+        "story_points": 2.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-13",
+        "week_end": "2026-04-19",
+        "ticket_count": 1,
+        "story_points": 2.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-20",
+        "week_end": "2026-04-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      }
+    ],
+    "Roberto Leitao": [
+      {
+        "week_start": "2025-10-20",
+        "week_end": "2025-10-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-10-27",
+        "week_end": "2025-11-02",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-03",
+        "week_end": "2025-11-09",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-10",
+        "week_end": "2025-11-16",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-17",
+        "week_end": "2025-11-23",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-24",
+        "week_end": "2025-11-30",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-01",
+        "week_end": "2025-12-07",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-08",
+        "week_end": "2025-12-14",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-15",
+        "week_end": "2025-12-21",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-22",
+        "week_end": "2025-12-28",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-29",
+        "week_end": "2026-01-04",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-05",
+        "week_end": "2026-01-11",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-12",
+        "week_end": "2026-01-18",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-19",
+        "week_end": "2026-01-25",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-26",
+        "week_end": "2026-02-01",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-02",
+        "week_end": "2026-02-08",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-09",
+        "week_end": "2026-02-15",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-16",
+        "week_end": "2026-02-22",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-23",
+        "week_end": "2026-03-01",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-02",
+        "week_end": "2026-03-08",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-09",
+        "week_end": "2026-03-15",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-16",
+        "week_end": "2026-03-22",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-23",
+        "week_end": "2026-03-29",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-03-30",
+        "week_end": "2026-04-05",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-04-06",
+        "week_end": "2026-04-12",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-13",
+        "week_end": "2026-04-19",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-20",
+        "week_end": "2026-04-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      }
+    ],
+    "joao.soares": [
+      {
+        "week_start": "2025-10-20",
+        "week_end": "2025-10-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-10-27",
+        "week_end": "2025-11-02",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-03",
+        "week_end": "2025-11-09",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-10",
+        "week_end": "2025-11-16",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-17",
+        "week_end": "2025-11-23",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-24",
+        "week_end": "2025-11-30",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-01",
+        "week_end": "2025-12-07",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-08",
+        "week_end": "2025-12-14",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-15",
+        "week_end": "2025-12-21",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-22",
+        "week_end": "2025-12-28",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-29",
+        "week_end": "2026-01-04",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-05",
+        "week_end": "2026-01-11",
+        "ticket_count": 1,
+        "story_points": 4.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-12",
+        "week_end": "2026-01-18",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-19",
+        "week_end": "2026-01-25",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-26",
+        "week_end": "2026-02-01",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-02",
+        "week_end": "2026-02-08",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-09",
+        "week_end": "2026-02-15",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-16",
+        "week_end": "2026-02-22",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-23",
+        "week_end": "2026-03-01",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-02",
+        "week_end": "2026-03-08",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-09",
+        "week_end": "2026-03-15",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-03-16",
+        "week_end": "2026-03-22",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-23",
+        "week_end": "2026-03-29",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-30",
+        "week_end": "2026-04-05",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-06",
+        "week_end": "2026-04-12",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-13",
+        "week_end": "2026-04-19",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-20",
+        "week_end": "2026-04-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      }
+    ],
+    "Jos\u00e9 Paulo M Rey Alvarez": [
+      {
+        "week_start": "2025-10-20",
+        "week_end": "2025-10-26",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2025-10-27",
+        "week_end": "2025-11-02",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-03",
+        "week_end": "2025-11-09",
+        "ticket_count": 2,
+        "story_points": 5.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2025-11-10",
+        "week_end": "2025-11-16",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2025-11-17",
+        "week_end": "2025-11-23",
+        "ticket_count": 6,
+        "story_points": 5.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 5
+      },
+      {
+        "week_start": "2025-11-24",
+        "week_end": "2025-11-30",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-01",
+        "week_end": "2025-12-07",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-08",
+        "week_end": "2025-12-14",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-15",
+        "week_end": "2025-12-21",
+        "ticket_count": 3,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 3
+      },
+      {
+        "week_start": "2025-12-22",
+        "week_end": "2025-12-28",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-29",
+        "week_end": "2026-01-04",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-05",
+        "week_end": "2026-01-11",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-12",
+        "week_end": "2026-01-18",
+        "ticket_count": 7,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 7
+      },
+      {
+        "week_start": "2026-01-19",
+        "week_end": "2026-01-25",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-01-26",
+        "week_end": "2026-02-01",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-02-02",
+        "week_end": "2026-02-08",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-02-09",
+        "week_end": "2026-02-15",
+        "ticket_count": 5,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 5
+      },
+      {
+        "week_start": "2026-02-16",
+        "week_end": "2026-02-22",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-02-23",
+        "week_end": "2026-03-01",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-03-02",
+        "week_end": "2026-03-08",
+        "ticket_count": 2,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 2
+      },
+      {
+        "week_start": "2026-03-09",
+        "week_end": "2026-03-15",
+        "ticket_count": 2,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 2
+      },
+      {
+        "week_start": "2026-03-16",
+        "week_end": "2026-03-22",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-23",
+        "week_end": "2026-03-29",
+        "ticket_count": 6,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 6
+      },
+      {
+        "week_start": "2026-03-30",
+        "week_end": "2026-04-05",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-06",
+        "week_end": "2026-04-12",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-04-13",
+        "week_end": "2026-04-19",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2026-04-20",
+        "week_end": "2026-04-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      }
+    ],
+    "Caroline Sharpe": [
+      {
+        "week_start": "2025-10-20",
+        "week_end": "2025-10-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-10-27",
+        "week_end": "2025-11-02",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-03",
+        "week_end": "2025-11-09",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-10",
+        "week_end": "2025-11-16",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-17",
+        "week_end": "2025-11-23",
+        "ticket_count": 1,
+        "story_points": 2.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-24",
+        "week_end": "2025-11-30",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-01",
+        "week_end": "2025-12-07",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-08",
+        "week_end": "2025-12-14",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-15",
+        "week_end": "2025-12-21",
+        "ticket_count": 1,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 1
+      },
+      {
+        "week_start": "2025-12-22",
+        "week_end": "2025-12-28",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-29",
+        "week_end": "2026-01-04",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-05",
+        "week_end": "2026-01-11",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-12",
+        "week_end": "2026-01-18",
+        "ticket_count": 1,
+        "story_points": 1.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-19",
+        "week_end": "2026-01-25",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-26",
+        "week_end": "2026-02-01",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-02",
+        "week_end": "2026-02-08",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-09",
+        "week_end": "2026-02-15",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-16",
+        "week_end": "2026-02-22",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-23",
+        "week_end": "2026-03-01",
+        "ticket_count": 5,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 5
+      },
+      {
+        "week_start": "2026-03-02",
+        "week_end": "2026-03-08",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-09",
+        "week_end": "2026-03-15",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-16",
+        "week_end": "2026-03-22",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-23",
+        "week_end": "2026-03-29",
+        "ticket_count": 1,
+        "story_points": 1.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-30",
+        "week_end": "2026-04-05",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-06",
+        "week_end": "2026-04-12",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-13",
+        "week_end": "2026-04-19",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-20",
+        "week_end": "2026-04-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      }
+    ],
+    "Charlie Eads": [
+      {
+        "week_start": "2025-10-20",
+        "week_end": "2025-10-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-10-27",
+        "week_end": "2025-11-02",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-03",
+        "week_end": "2025-11-09",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-10",
+        "week_end": "2025-11-16",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-17",
+        "week_end": "2025-11-23",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-11-24",
+        "week_end": "2025-11-30",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-01",
+        "week_end": "2025-12-07",
+        "ticket_count": 4,
+        "story_points": 18.0,
+        "tickets_with_sp": 4,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-08",
+        "week_end": "2025-12-14",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-15",
+        "week_end": "2025-12-21",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-22",
+        "week_end": "2025-12-28",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2025-12-29",
+        "week_end": "2026-01-04",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-05",
+        "week_end": "2026-01-11",
+        "ticket_count": 2,
+        "story_points": 3.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-12",
+        "week_end": "2026-01-18",
+        "ticket_count": 4,
+        "story_points": 9.0,
+        "tickets_with_sp": 4,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-19",
+        "week_end": "2026-01-25",
+        "ticket_count": 1,
+        "story_points": -22.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-01-26",
+        "week_end": "2026-02-01",
+        "ticket_count": 4,
+        "story_points": 15.0,
+        "tickets_with_sp": 4,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-02",
+        "week_end": "2026-02-08",
+        "ticket_count": 4,
+        "story_points": 8.0,
+        "tickets_with_sp": 4,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-09",
+        "week_end": "2026-02-15",
+        "ticket_count": 12,
+        "story_points": 33.0,
+        "tickets_with_sp": 12,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-16",
+        "week_end": "2026-02-22",
+        "ticket_count": 1,
+        "story_points": 2.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-02-23",
+        "week_end": "2026-03-01",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-02",
+        "week_end": "2026-03-08",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-09",
+        "week_end": "2026-03-15",
+        "ticket_count": 1,
+        "story_points": 1.0,
+        "tickets_with_sp": 1,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-16",
+        "week_end": "2026-03-22",
+        "ticket_count": 6,
+        "story_points": 9.0,
+        "tickets_with_sp": 6,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-23",
+        "week_end": "2026-03-29",
+        "ticket_count": 2,
+        "story_points": 8.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-03-30",
+        "week_end": "2026-04-05",
+        "ticket_count": 5,
+        "story_points": 10.0,
+        "tickets_with_sp": 5,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-06",
+        "week_end": "2026-04-12",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-13",
+        "week_end": "2026-04-19",
+        "ticket_count": 2,
+        "story_points": 2.0,
+        "tickets_with_sp": 2,
+        "tickets_without_sp": 0
+      },
+      {
+        "week_start": "2026-04-20",
+        "week_end": "2026-04-26",
+        "ticket_count": 0,
+        "story_points": 0.0,
+        "tickets_with_sp": 0,
+        "tickets_without_sp": 0
+      }
+    ]
+  }
+}

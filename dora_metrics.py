@@ -182,7 +182,8 @@ class JiraDORAMetrics:
             f"project in ({','.join(projects)})",
             f"resolutiondate >= '{start_date}'",
             f"resolutiondate <= '{end_date}'",
-            "status in (Done, Resolved, Closed, Released, Deployed)"
+            "status in (Done, Resolved, Closed, Released, Deployed)",
+            "issuetype in (Story, Bug, Task)"
         ]
 
         if team:
@@ -254,7 +255,9 @@ class JiraDORAMetrics:
 
             # Ensure non-negative (in case of data issues)
             cycle_time_hours = max(0, cycle_time_hours)
-            cycle_times.append(cycle_time_hours)
+            # Only include assigned tickets in averages
+            if issue["assignee"] != "Unassigned":
+                cycle_times.append(cycle_time_hours)
 
             issues_with_times.append({
                 "key": issue["key"],
@@ -327,7 +330,9 @@ class JiraDORAMetrics:
 
             # Ensure non-negative
             lead_time_hours = max(0, lead_time_hours)
-            lead_times.append(lead_time_hours)
+            # Only include assigned tickets in averages
+            if issue["assignee"] != "Unassigned":
+                lead_times.append(lead_time_hours)
 
             issues_with_times.append({
                 "key": issue["key"],
@@ -586,8 +591,10 @@ class JiraDORAMetrics:
             # Lead Time = Created -> Resolved (total time from request to delivery)
             lead_time_hours = max(0, (resolved_dt - created_dt).total_seconds() / 3600)
 
-            weekly_data[week_label]["cycle_times"].append(cycle_time_hours)
-            weekly_data[week_label]["lead_times"].append(lead_time_hours)
+            # Only include assigned tickets in averages
+            if issue["assignee"] != "Unassigned":
+                weekly_data[week_label]["cycle_times"].append(cycle_time_hours)
+                weekly_data[week_label]["lead_times"].append(lead_time_hours)
             weekly_data[week_label]["issues"].append({
                 "key": issue["key"],
                 "summary": issue["summary"],
@@ -763,15 +770,15 @@ class JiraDORAMetrics:
                     report["last_week_average"] = {
                         "period": last_week,
                         "teams": ["SAOP", "SAOP2"],
-                        "lead_time": {
-                            "SAOP_days": saop_lead,
-                            "SAOP2_days": saop2_lead,
-                            "average_days": round((saop_lead + saop2_lead) / 2, 2)
-                        },
                         "cycle_time": {
                             "SAOP_days": saop_cycle,
                             "SAOP2_days": saop2_cycle,
                             "average_days": round((saop_cycle + saop2_cycle) / 2, 2)
+                        },
+                        "lead_time": {
+                            "SAOP_days": saop_lead,
+                            "SAOP2_days": saop2_lead,
+                            "average_days": round((saop_lead + saop2_lead) / 2, 2)
                         }
                     }
 
@@ -903,14 +910,14 @@ class JiraDORAMetrics:
             print("=" * 100)
             lwa = report["last_week_average"]
             print(f"\nPeriod: {lwa['period']}")
-            print(f"\nLead Time:")
-            print(f"  SAOP:    {lwa['lead_time']['SAOP_days']} days")
-            print(f"  SAOP2:   {lwa['lead_time']['SAOP2_days']} days")
-            print(f"  Average: {lwa['lead_time']['average_days']} days")
             print(f"\nCycle Time:")
             print(f"  SAOP:    {lwa['cycle_time']['SAOP_days']} days")
             print(f"  SAOP2:   {lwa['cycle_time']['SAOP2_days']} days")
             print(f"  Average: {lwa['cycle_time']['average_days']} days")
+            print(f"\nLead Time:")
+            print(f"  SAOP:    {lwa['lead_time']['SAOP_days']} days")
+            print(f"  SAOP2:   {lwa['lead_time']['SAOP2_days']} days")
+            print(f"  Average: {lwa['lead_time']['average_days']} days")
 
         print("\n" + "=" * 100)
 
