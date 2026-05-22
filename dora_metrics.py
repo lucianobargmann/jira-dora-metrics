@@ -568,6 +568,9 @@ class JiraDORAMetrics:
         })
 
         start_dt = datetime.strptime(start_date, "%Y-%m-%d")
+        # Align start to Saturday (weekday 5)
+        days_since_saturday = (start_dt.weekday() - 5) % 7
+        aligned_start = start_dt - timedelta(days=days_since_saturday)
 
         for issue in enriched_issues:
             resolved = issue["resolved"]
@@ -578,10 +581,10 @@ class JiraDORAMetrics:
             created_dt = datetime.strptime(created[:19], "%Y-%m-%dT%H:%M:%S")
             in_progress_dt = datetime.strptime(in_progress[:19], "%Y-%m-%dT%H:%M:%S")
 
-            # Calculate week number from start date
-            days_diff = (resolved_dt - start_dt).days
+            # Calculate week number from aligned Saturday start
+            days_diff = (resolved_dt - aligned_start).days
             week_num = days_diff // 7
-            week_start = start_dt + timedelta(weeks=week_num)
+            week_start = aligned_start + timedelta(weeks=week_num)
             week_end = week_start + timedelta(days=6)
             week_label = f"{week_start.strftime('%Y-%m-%d')} to {week_end.strftime('%Y-%m-%d')}"
 

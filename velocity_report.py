@@ -80,10 +80,12 @@ class VelocityReport:
         return (0.0, False)
 
     def _get_week_start(self, date_str: str) -> str:
-        """Return the Monday (ISO week start) for a given date string."""
+        """Return the Saturday (week start) for a given date string."""
         dt = datetime.strptime(date_str[:10], "%Y-%m-%d")
-        monday = dt - timedelta(days=dt.weekday())
-        return monday.strftime("%Y-%m-%d")
+        # Saturday = weekday 5. Days since last Saturday:
+        days_since_saturday = (dt.weekday() - 5) % 7
+        saturday = dt - timedelta(days=days_since_saturday)
+        return saturday.strftime("%Y-%m-%d")
 
     def _get_developer_name(self, assignee: Optional[Dict]) -> str:
         if assignee and assignee.get("displayName"):
@@ -122,13 +124,14 @@ class VelocityReport:
         return grouped
 
     def _generate_all_weeks(self, start_date: str, end_date: str) -> List[str]:
-        """Generate all Monday-start week dates covering the period."""
+        """Generate all Saturday-start week dates covering the period."""
         start_dt = datetime.strptime(start_date, "%Y-%m-%d")
         end_dt = datetime.strptime(end_date, "%Y-%m-%d")
-        # Align to Monday
-        first_monday = start_dt - timedelta(days=start_dt.weekday())
+        # Align to Saturday
+        days_since_saturday = (start_dt.weekday() - 5) % 7
+        first_saturday = start_dt - timedelta(days=days_since_saturday)
         weeks = []
-        current = first_monday
+        current = first_saturday
         while current <= end_dt:
             weeks.append(current.strftime("%Y-%m-%d"))
             current += timedelta(days=7)
