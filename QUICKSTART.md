@@ -34,20 +34,20 @@ python3 test_connection.py
 
 ### Generate team performance report:
 ```bash
-# Last 12 weeks, SAOP and SAOP2 teams
-python3 run_with_env.py --teams SAOP,SAOP2
+# Last 12 weeks, POD1, POD2, POD3 and POD4 teams
+python3 run_with_env.py --teams POD1,POD2,POD3,POD4
 
 # Custom date range
-python3 run_with_env.py --teams SAOP,SAOP2 --start-date 2024-09-01 --end-date 2024-11-17
+python3 run_with_env.py --teams POD1,POD2,POD3,POD4 --start-date 2024-09-01 --end-date 2024-11-17
 
 # Save to JSON file
-python3 run_with_env.py --teams SAOP,SAOP2 --output my_report.json
+python3 run_with_env.py --teams POD1,POD2,POD3,POD4 --output my_report.json
 ```
 
 That's it! The report will show:
 - Weekly summaries of cycle time and lead time
 - Overall metrics for the period
-- Breakdown by team (SAOP, SAOP2)
+- Breakdown by team (POD1, POD2, POD3, POD4)
 - Individual team member performance
 
 ---

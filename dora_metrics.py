@@ -22,6 +22,16 @@ from collections import defaultdict
 import statistics
 
 
+# Statuses that represent completed / terminal work. "Ready for Prod" is the
+# current done state (formerly "Done"); "Resolved" is a newer end state.
+DONE_STATUSES = ["Done", "Resolved", "Closed", "Released", "Deployed", "Ready for Prod"]
+# JQL fragment for the same set (multi-word statuses must be quoted).
+DONE_STATUSES_JQL = '(Done, Resolved, Closed, Released, Deployed, "Ready for Prod")'
+
+# Labels used to flag defects by severity.
+DEFECT_LABELS = ["p1", "p2"]
+
+
 class JiraDORAMetrics:
     def __init__(self, jira_url: str, email: str, api_token: str):
         """
@@ -182,7 +192,7 @@ class JiraDORAMetrics:
             f"project in ({','.join(projects)})",
             f"resolutiondate >= '{start_date}'",
             f"resolutiondate <= '{end_date}'",
-            "status in (Done, Resolved, Closed, Released, Deployed)",
+            f"status in {DONE_STATUSES_JQL}",
             "issuetype in (Story, Bug, Task)"
         ]
 
@@ -648,6 +658,108 @@ class JiraDORAMetrics:
             "total_issues": sum(len(data["issues"]) for data in weekly_data.values())
         }
     
+    def _bucket_defects_by_label(self, issues: List[Dict]) -> Dict:
+        """Count defects by severity label (p1 / p2). Total is the distinct
+        issue count, so an issue tagged with both p1 and p2 is counted once."""
+        p1 = 0
+        p2 = 0
+        for issue in issues:
+            labels = [str(l).lower() for l in issue["fields"].get("labels", [])]
+            if "p1" in labels:
+                p1 += 1
+            if "p2" in labels:
+                p2 += 1
+        return {"p1": p1, "p2": p2, "total": len(issues)}
+
+    def calculate_defect_metrics(self, projects: List[str], start_date: str, end_date: str,
+                                 completed_count: int = 0) -> Dict:
+        """
+        Calculate defect metrics based on the p1 / p2 severity labels.
+
+        Reports:
+          - open defects currently open (p1, p2, total)
+          - defects opened in the last 7 days (p1, p2, total)
+          - defects closed in the last 7 days (p1, p2, total)
+          - defect density:
+              * open defects / tickets completed in the period
+              * defects opened last week / defects closed last week
+          - week-over-week trend of defects opened (last week vs prior week)
+
+        "Open" means the issue is not in one of the terminal statuses
+        (Done, Resolved, Closed, Released, Deployed, "Ready for Prod").
+        """
+        project_clause = f"project in ({','.join(projects)})"
+        label_clause = "labels in (p1, p2)"
+        fields = ["labels", "priority", "status", "key", "created", "resolutiondate"]
+
+        # Currently open defects (point-in-time snapshot)
+        open_jql = f"{project_clause} AND {label_clause} AND status not in {DONE_STATUSES_JQL}"
+        open_defects = self.search_issues(open_jql, fields=fields)
+        open_counts = self._bucket_defects_by_label(open_defects)
+
+        # Define the last-week and prior-week windows relative to end_date
+        end_dt = datetime.strptime(end_date, "%Y-%m-%d")
+        last_week_start = (end_dt - timedelta(days=7)).strftime("%Y-%m-%d")
+        prior_week_start = (end_dt - timedelta(days=14)).strftime("%Y-%m-%d")
+
+        # Defects opened last week
+        opened_jql = (f"{project_clause} AND {label_clause} "
+                      f"AND created >= '{last_week_start}' AND created <= '{end_date}'")
+        opened_last_week = self._bucket_defects_by_label(self.search_issues(opened_jql, fields=fields))
+
+        # Defects opened the week before (for trend)
+        opened_prior_jql = (f"{project_clause} AND {label_clause} "
+                            f"AND created >= '{prior_week_start}' AND created < '{last_week_start}'")
+        opened_prior_week = self._bucket_defects_by_label(self.search_issues(opened_prior_jql, fields=fields))
+
+        # Defects closed last week
+        closed_jql = (f"{project_clause} AND {label_clause} "
+                      f"AND resolutiondate >= '{last_week_start}' AND resolutiondate <= '{end_date}'")
+        closed_last_week = self._bucket_defects_by_label(self.search_issues(closed_jql, fields=fields))
+
+        # Defect density
+        density_open_per_completed = (
+            round(open_counts["total"] / completed_count, 3) if completed_count else 0
+        )
+        density_opened_per_closed = (
+            round(opened_last_week["total"] / closed_last_week["total"], 3)
+            if closed_last_week["total"] else 0
+        )
+
+        # Week-over-week trend of opened defects
+        delta = opened_last_week["total"] - opened_prior_week["total"]
+        if delta > 0:
+            direction = "up"
+        elif delta < 0:
+            direction = "down"
+        else:
+            direction = "flat"
+        percent_change = (
+            round((delta / opened_prior_week["total"]) * 100, 1)
+            if opened_prior_week["total"] else None
+        )
+
+        return {
+            "last_week_period": f"{last_week_start} to {end_date}",
+            "open": open_counts,
+            "opened_last_week": opened_last_week,
+            "closed_last_week": closed_last_week,
+            "opened_prior_week": opened_prior_week,
+            "completed_tickets_in_period": completed_count,
+            "density": {
+                "open_per_completed": density_open_per_completed,
+                "opened_per_closed_last_week": density_opened_per_closed
+            },
+            "trend": {
+                "metric": "defects_opened_per_week",
+                "last_week": opened_last_week["total"],
+                "prior_week": opened_prior_week["total"],
+                "delta": delta,
+                "direction": direction,
+                "percent_change": percent_change
+            }
+        }
+
     def generate_report(self, projects: List[str], start_date: str, end_date: str) -> Dict:
         """Generate complete DORA metrics report."""
         print(f"Calculating DORA metrics for projects: {', '.join(projects)}")
@@ -673,8 +785,20 @@ class JiraDORAMetrics:
         
         return report
     
+    def _week_label_for_date(self, start_date: str, target_dt: datetime) -> str:
+        """Return the Saturday-aligned week label (matching get_weekly_summary)
+        that contains target_dt."""
+        start_dt = datetime.strptime(start_date, "%Y-%m-%d")
+        days_since_saturday = (start_dt.weekday() - 5) % 7
+        aligned_start = start_dt - timedelta(days=days_since_saturday)
+        week_num = (target_dt - aligned_start).days // 7
+        week_start = aligned_start + timedelta(weeks=week_num)
+        week_end = week_start + timedelta(days=6)
+        return f"{week_start.strftime('%Y-%m-%d')} to {week_end.strftime('%Y-%m-%d')}"
+
     def generate_team_performance_report(self, projects: List[str], start_date: str, end_date: str,
-                                         teams: Optional[List[str]] = None) -> Dict:
+                                         teams: Optional[List[str]] = None,
+                                         week_of: Optional[str] = None) -> Dict:
         """
         Generate comprehensive team performance report with weekly summaries and drill-downs.
 
@@ -682,7 +806,10 @@ class JiraDORAMetrics:
             projects: List of project keys
             start_date: Start date in YYYY-MM-DD format
             end_date: End date in YYYY-MM-DD format
-            teams: Optional list of specific teams to analyze (e.g., ['SAOP', 'SAOP2'])
+            teams: Optional list of specific teams to analyze (e.g., ['POD1', 'POD2', 'POD3', 'POD4'])
+            week_of: Optional date (YYYY-MM-DD); the "last week average" reports on the
+                week containing this date. Defaults to the previous completed week
+                relative to end_date (so the current partial week is skipped).
 
         Returns:
             Comprehensive report with overall, team, and individual metrics
@@ -711,6 +838,11 @@ class JiraDORAMetrics:
         report["overall"]["weekly_summary"] = self.get_weekly_summary(projects, start_date, end_date, enriched_issues=all_enriched_issues)
         report["overall"]["cycle_time"] = self.calculate_cycle_time(projects, start_date, end_date, enriched_issues=all_enriched_issues)
         report["overall"]["lead_time"] = self.calculate_lead_time(projects, start_date, end_date, enriched_issues=all_enriched_issues)
+
+        print("Calculating defect metrics (p1/p2 labels)...")
+        report["defects"] = self.calculate_defect_metrics(
+            projects, start_date, end_date, completed_count=len(all_enriched_issues)
+        )
 
         # Team-level metrics
         if teams:
@@ -755,35 +887,55 @@ class JiraDORAMetrics:
                     "lead_time": self.calculate_lead_time(projects, start_date, end_date, assignee=member, enriched_issues=member_issues)
                 }
 
-        # Calculate last week average for SAOP and SAOP2
-        if teams and "SAOP" in report["by_team"] and "SAOP2" in report["by_team"]:
-            saop_weeks = report["by_team"]["SAOP"].get("weekly_summary", {}).get("weeks", {})
-            saop2_weeks = report["by_team"]["SAOP2"].get("weekly_summary", {}).get("weeks", {})
+        # Calculate last week average across all analyzed teams (e.g. POD1..POD4)
+        if teams and report["by_team"]:
+            team_weeks = {
+                t: report["by_team"][t].get("weekly_summary", {}).get("weeks", {})
+                for t in teams if t in report["by_team"]
+            }
 
-            if saop_weeks and saop2_weeks:
-                # Get the most recent week (last key in ordered dict)
-                last_week = list(saop_weeks.keys())[-1]
+            # Pick the week to report on. With --week-of, use the week
+            # containing that date; otherwise default to the previous
+            # completed week relative to end_date, so the current partial
+            # week is never reported as "last week".
+            if week_of:
+                target_dt = datetime.strptime(week_of, "%Y-%m-%d")
+            else:
+                target_dt = datetime.strptime(end_date, "%Y-%m-%d") - timedelta(days=7)
+            last_week = self._week_label_for_date(start_date, target_dt)
 
-                if last_week in saop_weeks and last_week in saop2_weeks:
-                    saop_lead = saop_weeks[last_week]["lead_time"]["mean_days"]
-                    saop2_lead = saop2_weeks[last_week]["lead_time"]["mean_days"]
-                    saop_cycle = saop_weeks[last_week]["cycle_time"]["mean_days"]
-                    saop2_cycle = saop2_weeks[last_week]["cycle_time"]["mean_days"]
+            # Display every analyzed team (e.g. all of POD1..POD4). Teams
+            # with no completed tickets in that week are shown as "no data"
+            # and excluded from the average so they don't drag it toward zero.
+            analyzed = [t for t in teams if t in report["by_team"]]
+            cycle_time = {}
+            lead_time = {}
+            cycle_vals = []
+            lead_vals = []
+            for t in analyzed:
+                weeks = team_weeks.get(t, {})
+                if last_week in weeks:
+                    c = weeks[last_week]["cycle_time"]["mean_days"]
+                    l = weeks[last_week]["lead_time"]["mean_days"]
+                    cycle_time[f"{t}_days"] = c
+                    lead_time[f"{t}_days"] = l
+                    cycle_vals.append(c)
+                    lead_vals.append(l)
+                else:
+                    cycle_time[f"{t}_days"] = None
+                    lead_time[f"{t}_days"] = None
 
-                    report["last_week_average"] = {
-                        "period": last_week,
-                        "teams": ["SAOP", "SAOP2"],
-                        "cycle_time": {
-                            "SAOP_days": saop_cycle,
-                            "SAOP2_days": saop2_cycle,
-                            "average_days": round((saop_cycle + saop2_cycle) / 2, 2)
-                        },
-                        "lead_time": {
-                            "SAOP_days": saop_lead,
-                            "SAOP2_days": saop2_lead,
-                            "average_days": round((saop_lead + saop2_lead) / 2, 2)
-                        }
-                    }
+            contributing = [t for t in analyzed if cycle_time[f"{t}_days"] is not None]
+            cycle_time["average_days"] = round(sum(cycle_vals) / len(cycle_vals), 2) if cycle_vals else None
+            lead_time["average_days"] = round(sum(lead_vals) / len(lead_vals), 2) if lead_vals else None
+
+            report["last_week_average"] = {
+                "period": last_week,
+                "teams": analyzed,
+                "contributing_teams": contributing,
+                "cycle_time": cycle_time,
+                "lead_time": lead_time
+            }
 
         return report
 
@@ -906,21 +1058,59 @@ class JiraDORAMetrics:
                 if detailed:
                     self._print_ticket_details(member_cycle, member_lead)
 
-        # Last week average for SAOP and SAOP2
-        if "last_week_average" in report:
+        # Defect summary (p1/p2 labels)
+        if "defects" in report:
+            d = report["defects"]
             print("\n" + "=" * 100)
-            print("LAST WEEK AVERAGE (SAOP + SAOP2) / 2")
+            print("DEFECT SUMMARY (labels p1 / p2)")
             print("=" * 100)
+            print(f"\nLast week period: {d['last_week_period']}")
+
+            op = d["open"]
+            print(f"\nOpen defects (currently open):")
+            print(f"  p1: {op['p1']} | p2: {op['p2']} | total: {op['total']}")
+
+            ol = d["opened_last_week"]
+            print(f"\nOpened last week:")
+            print(f"  p1: {ol['p1']} | p2: {ol['p2']} | total: {ol['total']}")
+
+            cl = d["closed_last_week"]
+            print(f"\nClosed last week:")
+            print(f"  p1: {cl['p1']} | p2: {cl['p2']} | total: {cl['total']}")
+
+            dens = d["density"]
+            print(f"\nDefect density:")
+            print(f"  Open defects / completed tickets ({d['completed_tickets_in_period']}): {dens['open_per_completed']}")
+            print(f"  Opened / closed last week: {dens['opened_per_closed_last_week']}")
+
+            tr = d["trend"]
+            pct = f"{tr['percent_change']}%" if tr["percent_change"] is not None else "n/a"
+            arrow = {"up": "▲", "down": "▼", "flat": "■"}[tr["direction"]]
+            print(f"\nTrend (defects opened/week): {arrow} {tr['direction']} "
+                  f"(last week {tr['last_week']} vs prior week {tr['prior_week']}, "
+                  f"delta {tr['delta']:+d}, change {pct})")
+
+        # Last week average across analyzed teams
+        if "last_week_average" in report:
             lwa = report["last_week_average"]
+            contributing = lwa.get("contributing_teams", lwa["teams"])
+            teams_label = " + ".join(contributing) if contributing else "no teams with data"
+            print("\n" + "=" * 100)
+            print(f"LAST WEEK AVERAGE ({teams_label}) / {len(contributing)}")
+            print("=" * 100)
             print(f"\nPeriod: {lwa['period']}")
+
+            def _fmt(v):
+                return f"{v} days" if v is not None else "no data"
+
             print(f"\nCycle Time:")
-            print(f"  SAOP:    {lwa['cycle_time']['SAOP_days']} days")
-            print(f"  SAOP2:   {lwa['cycle_time']['SAOP2_days']} days")
-            print(f"  Average: {lwa['cycle_time']['average_days']} days")
+            for t in lwa["teams"]:
+                print(f"  {t}:    {_fmt(lwa['cycle_time'][f'{t}_days'])}")
+            print(f"  Average: {_fmt(lwa['cycle_time']['average_days'])}")
             print(f"\nLead Time:")
-            print(f"  SAOP:    {lwa['lead_time']['SAOP_days']} days")
-            print(f"  SAOP2:   {lwa['lead_time']['SAOP2_days']} days")
-            print(f"  Average: {lwa['lead_time']['average_days']} days")
+            for t in lwa["teams"]:
+                print(f"  {t}:    {_fmt(lwa['lead_time'][f'{t}_days'])}")
+            print(f"  Average: {_fmt(lwa['lead_time']['average_days'])}")
 
         print("\n" + "=" * 100)
 
@@ -979,14 +1169,18 @@ def main():
     parser.add_argument("--jira-url", required=True, help="JIRA instance URL (e.g., https://yourcompany.atlassian.net)")
     parser.add_argument("--email", required=True, help="Atlassian account email")
     parser.add_argument("--api-token", required=True, help="Atlassian API token")
-    parser.add_argument("--projects", default="IA,DATA,SAOP,SAOP2",
-                       help="Comma-separated project keys (default: IA,DATA,SAOP,SAOP2)")
+    parser.add_argument("--projects", default="IA,DATA,POD1,POD2,POD3,POD4",
+                       help="Comma-separated project keys (default: IA,DATA,POD1,POD2,POD3,POD4)")
     parser.add_argument("--start-date",
                        help="Start date in YYYY-MM-DD format (default: 12 weeks ago)")
     parser.add_argument("--end-date",
                        help="End date in YYYY-MM-DD format (default: today)")
     parser.add_argument("--teams",
-                       help="Comma-separated team names for drill-down (e.g., SAOP,SAOP2)")
+                       help="Comma-separated team names for drill-down (e.g., POD1,POD2,POD3,POD4)")
+    parser.add_argument("--week-of",
+                       help="Date (YYYY-MM-DD) selecting the week for the LAST WEEK AVERAGE "
+                            "section. Defaults to the previous completed week (skips the "
+                            "current partial week).")
     parser.add_argument("--mode", default="team-performance",
                        choices=["team-performance", "dora"],
                        help="Report mode: team-performance (default) or dora")
@@ -1020,7 +1214,7 @@ def main():
 
     # Generate and print report based on mode
     if args.mode == "team-performance":
-        report = calculator.generate_team_performance_report(projects, start_date, end_date, teams)
+        report = calculator.generate_team_performance_report(projects, start_date, end_date, teams, week_of=args.week_of)
         calculator.print_team_performance_report(report, detailed=args.detailed)
     else:  # dora mode
         report = calculator.generate_report(projects, start_date, end_date)

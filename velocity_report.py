@@ -8,7 +8,7 @@ a configurable period, broken down by developer with weekly granularity.
 Usage:
     python velocity_report.py --jira-url https://yourco.atlassian.net \
         --email you@example.com --api-token TOKEN \
-        --projects IA,DATA,SAOP,SAOP2 --start-date 2025-09-05 --end-date 2026-03-05
+        --projects IA,DATA,POD1,POD2,POD3,POD4 --start-date 2025-09-05 --end-date 2026-03-05
 """
 
 import os
@@ -570,8 +570,8 @@ def main():
                         help="JIRA instance URL (e.g., https://yourcompany.atlassian.net)")
     parser.add_argument("--email", required=True, help="Atlassian account email")
     parser.add_argument("--api-token", required=True, help="Atlassian API token")
-    parser.add_argument("--projects", default="IA,DATA,SAOP,SAOP2",
-                        help="Comma-separated project keys (default: IA,DATA,SAOP,SAOP2)")
+    parser.add_argument("--projects", default="IA,DATA,POD1,POD2,POD3,POD4",
+                        help="Comma-separated project keys (default: IA,DATA,POD1,POD2,POD3,POD4)")
     parser.add_argument("--start-date",
                         default=(datetime.now() - timedelta(weeks=26)).strftime("%Y-%m-%d"),
                         help="Start date YYYY-MM-DD (default: 26 weeks ago)")

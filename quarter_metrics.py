@@ -253,14 +253,14 @@ def main():
                         help="JIRA instance URL (e.g., https://yourcompany.atlassian.net)")
     parser.add_argument("--email", required=True, help="Atlassian account email")
     parser.add_argument("--api-token", required=True, help="Atlassian API token")
-    parser.add_argument("--projects", default="IA,DATA,SAOP,SAOP2",
-                        help="Comma-separated project keys (default: IA,DATA,SAOP,SAOP2)")
+    parser.add_argument("--projects", default="IA,DATA,POD1,POD2,POD3,POD4",
+                        help="Comma-separated project keys (default: IA,DATA,POD1,POD2,POD3,POD4)")
     parser.add_argument("--year", type=int, default=2025,
                         help="Year for the report (default: 2025)")
     parser.add_argument("--quarter", type=int, default=4, choices=[1, 2, 3, 4],
                         help="Quarter number 1-4 (default: 4 for Q4)")
     parser.add_argument("--teams",
-                        help="Comma-separated team names (e.g., SAOP,SAOP2)")
+                        help="Comma-separated team names (e.g., POD1,POD2,POD3,POD4)")
     parser.add_argument("--output", default="quarter_metrics.csv",
                         help="Output CSV file path (default: quarter_metrics.csv)")
 

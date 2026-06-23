@@ -190,7 +190,7 @@ class ExcelExporter:
             }
 
         for issue in overall_cycle.get("issues", []):
-            # Extract project from issue key (e.g., "SAOP-1068" -> "SAOP")
+            # Extract project from issue key (e.g., "POD1-1068" -> "POD1")
             issue_key = issue["key"]
             project = issue_key.split("-")[0] if "-" in issue_key else "Unknown"
 

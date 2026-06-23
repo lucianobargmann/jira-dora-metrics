@@ -52,7 +52,7 @@ def test_connection():
         end_date = datetime.now().strftime("%Y-%m-%d")
         start_date = (datetime.now() - timedelta(days=7)).strftime("%Y-%m-%d")
 
-        projects = ["SAOP", "SAOP2", "IA", "DATA"]
+        projects = ["POD1", "POD2", "POD3", "POD4", "IA", "DATA"]
         jql = f"project in ({','.join(projects)}) AND updated >= '{start_date}'"
 
         print(f"   Query: {jql}")
@@ -71,7 +71,7 @@ def test_connection():
     # Get team members
     print("\n4. Getting team members...")
     try:
-        for project in ["SAOP", "SAOP2"]:
+        for project in ["POD1", "POD2", "POD3", "POD4"]:
             try:
                 members = calculator.get_team_members([project], start_date, end_date, team=project)
                 print(f"   ✓ {project}: {len(members)} members")
@@ -88,7 +88,7 @@ def test_connection():
     print("Connection test complete!")
     print("=" * 80)
     print("\nYou can now run the full report with:")
-    print("  python3 run_with_env.py --teams SAOP,SAOP2")
+    print("  python3 run_with_env.py --teams POD1,POD2,POD3,POD4")
     return True
 
 if __name__ == "__main__":

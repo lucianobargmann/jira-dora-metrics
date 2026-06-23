@@ -5,7 +5,7 @@ Extract and analyze team performance metrics from JIRA.
 ## Features
 
 - **Weekly Summaries**: Get weekly breakdowns of cycle time and lead time
-- **Team Drill-down**: Analyze performance by team (SAOP, SAOP2, etc.)
+- **Team Drill-down**: Analyze performance by team (POD1, POD2, POD3, POD4, etc.)
 - **Individual Performance**: Drill down to team member level
 - **Default Date Range**: Automatically uses last 12 weeks if not specified
 - **DORA Metrics**: Classic DORA metrics (Deployment Frequency, Lead Time, MTTR, Change Failure Rate)
@@ -32,7 +32,7 @@ python dora_metrics.py \
 This will:
 - Use the last 12 weeks by default
 - Show weekly summaries of cycle time and lead time
-- Include all projects: IA, DATA, SAOP, SAOP2
+- Include all projects: IA, DATA, POD1, POD2, POD3, POD4
 
 ### Drill Down to Specific Teams
 
@@ -41,12 +41,12 @@ python dora_metrics.py \
   --cloud-id YOUR_CLOUD_ID \
   --email your.email@example.com \
   --api-token YOUR_API_TOKEN \
-  --teams SAOP,SAOP2
+  --teams POD1,POD2,POD3,POD4
 ```
 
 This will show:
 1. Overall weekly summary
-2. Team-level breakdown for SAOP and SAOP2
+2. Team-level breakdown for POD1, POD2, POD3 and POD4
 3. Individual team member performance within each team
 
 ### Custom Date Range
@@ -58,7 +58,7 @@ python dora_metrics.py \
   --api-token YOUR_API_TOKEN \
   --start-date 2024-01-01 \
   --end-date 2024-03-31 \
-  --teams SAOP,SAOP2
+  --teams POD1,POD2,POD3,POD4
 ```
 
 ### Save Report to File
@@ -68,7 +68,7 @@ python dora_metrics.py \
   --cloud-id YOUR_CLOUD_ID \
   --email your.email@example.com \
   --api-token YOUR_API_TOKEN \
-  --teams SAOP,SAOP2 \
+  --teams POD1,POD2,POD3,POD4 \
   --output report.json
 ```
 
@@ -150,7 +150,7 @@ python dora_metrics.py \
   --cloud-id abc123 \
   --email user@example.com \
   --api-token token123 \
-  --teams SAOP
+  --teams POD1
 ```
 
 ### Quarterly Report with Export
@@ -162,7 +162,7 @@ python dora_metrics.py \
   --api-token token123 \
   --start-date 2024-10-01 \
   --end-date 2024-12-31 \
-  --teams SAOP,SAOP2 \
+  --teams POD1,POD2,POD3,POD4 \
   --output q4_2024_report.json
 ```
 

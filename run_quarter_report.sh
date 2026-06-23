@@ -39,8 +39,8 @@ echo "=============================================="
 echo ""
 echo "Configuration:"
 echo "  JIRA URL: $JIRA_URL"
-echo "  Projects: IA, DATA, SAOP, SAOP2"
-echo "  Teams:    SAOP, SAOP2"
+echo "  Projects: IA, DATA, POD1, POD2, POD3, POD4"
+echo "  Teams:    POD1, POD2, POD3, POD4"
 echo "  Year:     $YEAR"
 echo "  Quarter:  Q$QUARTER"
 echo "  Output:   $OUTPUT_FILE"
@@ -52,8 +52,8 @@ python3 quarter_metrics.py \
     --jira-url "$JIRA_URL" \
     --email "$EMAIL" \
     --api-token "$API_TOKEN" \
-    --projects IA,DATA,SAOP,SAOP2 \
-    --teams SAOP,SAOP2 \
+    --projects IA,DATA,POD1,POD2,POD3,POD4 \
+    --teams POD1,POD2,POD3,POD4 \
     --year "$YEAR" \
     --quarter "$QUARTER" \
     --output "$OUTPUT_FILE"

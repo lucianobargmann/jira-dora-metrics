@@ -23,8 +23,8 @@ def main():
     )
     parser.add_argument(
         "--projects",
-        default="IA,DATA,SAOP,SAOP2",
-        help="Comma-separated project keys (default: IA,DATA,SAOP,SAOP2)"
+        default="IA,DATA,POD1,POD2,POD3,POD4",
+        help="Comma-separated project keys (default: IA,DATA,POD1,POD2,POD3,POD4)"
     )
     parser.add_argument(
         "--start-date",
@@ -36,7 +36,7 @@ def main():
     )
     parser.add_argument(
         "--teams",
-        help="Comma-separated team names for drill-down (e.g., SAOP,SAOP2)"
+        help="Comma-separated team names for drill-down (e.g., POD1,POD2,POD3,POD4)"
     )
     parser.add_argument(
         "--output",

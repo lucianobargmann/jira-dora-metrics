@@ -22,7 +22,7 @@ if [ "$EMAIL" = "your.email@example.com" ] || [ "$API_TOKEN" = "your-api-token" 
     exit 1
 fi
 
-PROJECTS="IA,DATA,SAOP,SAOP2"
+PROJECTS="IA,DATA,POD1,POD2,POD3,POD4"
 START_DATE="$(date -d '26 weeks ago' +%Y-%m-%d)"
 END_DATE="$(date +%Y-%m-%d)"
 OUTPUT="velocity_report_$(date +%Y%m%d_%H%M%S)"

@@ -14,7 +14,7 @@ BITBUCKET_URL=https://api.bitbucket.org/2.0
 BITBUCKET_WORKSPACE=your-workspace
 BITBUCKET_USERNAME=your-username
 BITBUCKET_APP_PASSWORD=your-app-password
-PROJECT_KEY=SAOP
+PROJECT_KEY=POD1
 REPOSITORY_SLUG=your-repo
 DEFAULT_BRANCH=main
 EOF
@@ -28,7 +28,7 @@ nano .env  # or vim .env, or use your preferred editor
 Once configured, you can run the metrics report with:
 ```bash
 cd /home/luke/code/metrics
-python3 run_with_env.py --teams SAOP,SAOP2
+python3 run_with_env.py --teams POD1,POD2,POD3,POD4
 ```
 
 ## Option 2: Use environment variables directly
@@ -43,7 +43,7 @@ export JIRA_API_TOKEN=your-jira-api-token
 
 Then run with the same command:
 ```bash
-python3 run_with_env.py --teams SAOP,SAOP2
+python3 run_with_env.py --teams POD1,POD2,POD3,POD4
 ```
 
 ## Option 3: Use command line arguments (Original method)
@@ -55,7 +55,7 @@ python3 dora_metrics.py \
   --cloud-id YOUR_CLOUD_ID \
   --email your.email@example.com \
   --api-token YOUR_API_TOKEN \
-  --teams SAOP,SAOP2
+  --teams POD1,POD2,POD3,POD4
 ```
 
 ## Getting Your JIRA Credentials
@@ -81,13 +81,13 @@ After setting up credentials, try:
 python3 run_with_env.py
 
 # Specific teams
-python3 run_with_env.py --teams SAOP,SAOP2
+python3 run_with_env.py --teams POD1,POD2,POD3,POD4
 
 # Custom date range
-python3 run_with_env.py --teams SAOP,SAOP2 --start-date 2024-01-01 --end-date 2024-03-31
+python3 run_with_env.py --teams POD1,POD2,POD3,POD4 --start-date 2024-01-01 --end-date 2024-03-31
 
 # Save to file
-python3 run_with_env.py --teams SAOP,SAOP2 --output report.json
+python3 run_with_env.py --teams POD1,POD2,POD3,POD4 --output report.json
 ```
 
 ## Troubleshooting

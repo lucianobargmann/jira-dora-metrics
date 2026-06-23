@@ -16,17 +16,17 @@ pip install pandas openpyxl
 
 ```bash
 # Export directly to Excel
-python3 run_with_env.py --teams SAOP,SAOP2 --output report.xlsx
+python3 run_with_env.py --teams POD1,POD2,POD3,POD4 --output report.xlsx
 
 # Or use the --excel flag to auto-generate filename
-python3 run_with_env.py --teams SAOP,SAOP2 --excel
+python3 run_with_env.py --teams POD1,POD2,POD3,POD4 --excel
 ```
 
 ### Custom date range with Excel export
 
 ```bash
 python3 run_with_env.py \
-  --teams SAOP,SAOP2 \
+  --teams POD1,POD2,POD3,POD4 \
   --start-date 2024-09-01 \
   --end-date 2024-11-17 \
   --output team_metrics_q4.xlsx

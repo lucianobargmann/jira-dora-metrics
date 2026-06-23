@@ -40,7 +40,7 @@ const CONFIG = {
   slack: {
     webhookUrl: process.env.SLACK_WEBHOOK_URL,
   },
-  projects: ['IA', 'DATA', 'SAOP', 'SAOP2'],
+  projects: ['IA', 'DATA', 'POD1', 'POD2', 'POD3', 'POD4'],
   issueTypes: ['Bug', 'Story', 'Task'],
   activeStatuses: ['IN PROGRESS', 'DEV IN PROGRESS', 'IN REVIEW'],
 };
